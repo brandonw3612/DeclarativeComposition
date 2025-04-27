@@ -1,0 +1,25 @@
+dc {
+    .class = "Compositions.Sample1"
+    .initializer = "constructor"
+}
+
+RootVisual : SpriteVisual {
+    .size = #"new(800f, 600f)"
+    .offset = #"new(100f, 200f, 0f)"
+    SpriteVisual {
+        .relativeSizeAdjustment = #"new(1f, 1f)"
+        .brush = backgroundBrush : ColorBrush {
+            .color = #"Windows.UI.Color.FromArgb(0x3F, 0xBF, 0xBF, 0xBF)"
+        }
+        anotherVisual : SpriteVisual {
+            .relativeSizeAdjustment = #"new(1f, 1f)"
+            .size = #"new(40f, 40f)"
+        }
+    }
+    .clip = GeometricClip {
+        .geometry = RectangleGeometry {
+            .size = #"new(600f, 400f)"
+            .offset = #"new(100f, 0f)"
+        }
+    }
+}

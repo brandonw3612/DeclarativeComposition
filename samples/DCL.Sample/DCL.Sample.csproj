@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net9.0-windows</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <OutputPath>../../build/DCL.Sample</OutputPath>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+        <TargetPlatformVersion>10.0.19041.0</TargetPlatformVersion>
+        <EnableWindowsTargeting>true</EnableWindowsTargeting>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.7.250401001" />
+    </ItemGroup>
+    
+    <ItemGroup>
+      <ProjectReference Include="../../src/DeclarativeComposition/DeclarativeComposition.csproj"
+                        OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <AdditionalFiles Include="Compositions/*.dc" />
+    </ItemGroup>
+    
+</Project>
