@@ -13,6 +13,8 @@ public class Translator
     /// </summary>
     public TranslatorConfig Config { get; }
     
+    public AnonymousObjectIndexer AnonymousObjectIndexer { get; } = new();
+    
     /// <summary>
     /// Variable declarations for the generated C# class.
     /// </summary>
@@ -29,7 +31,6 @@ public class Translator
     /// <param name="config">Configuration for the translator.</param>
     public Translator(TranslatorConfig config)
     {
-        AnonymousObjectIndexer.Reset();
         Config = config;
     }
 

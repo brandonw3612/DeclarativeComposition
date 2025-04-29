@@ -48,7 +48,7 @@ public class ObjectNode(string type) : ExpressionNode
         var fullClassName = $"{objectProvider.NamespaceName}.{objectProvider.ClassName}";
         if (Name is null && _anonymousId < 0)
         {
-            _anonymousId = AnonymousObjectIndexer.Next();
+            _anonymousId = translator.AnonymousObjectIndexer.Next();
         }
         var localName = Name ?? $"obj{_anonymousId}";
         if (Name is null) translator.InitializerBody.Add($"var {localName} = {objectProvider.ConstructorCall};");
