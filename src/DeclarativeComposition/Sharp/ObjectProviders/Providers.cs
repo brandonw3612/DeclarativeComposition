@@ -363,7 +363,6 @@ partial class SharpObjectProvider
             ["StrokeEndCap".ToLower()] = new("StrokeEndCap"),
             ["StrokeLineJoin".ToLower()] = new("StrokeLineJoin"),
             ["StrokeMiterLimit".ToLower()] = new("StrokeMiterLimit"),
-            ["StrokeOffset".ToLower()] = new("StrokeOffset"),
             ["StrokeStartCap".ToLower()] = new("StrokeStartCap"),
             ["StrokeThickness".ToLower()] = new("StrokeThickness")
         },
