@@ -416,39 +416,6 @@ partial class SharpObjectProvider
         "Children.InsertAtTop"
     );
     
-    /// <summary>
-    /// Provider for the EffectVisual object.
-    /// </summary>
-    private static readonly SharpObjectProvider EffectVisual = new(
-        Visual,
-        "Microsoft.UI.Composition",
-        "EffectVisual",
-        "_compositor.CreateEffectVisual()",
-        new()
-        {
-            ["Effect".ToLower()] = new("Effect"),
-        },
-        "Children.InsertAtTop"
-    );
-    
-    /// <summary>
-    /// Provider for the ImageVisual object.
-    /// </summary>
-    private static readonly SharpObjectProvider ImageVisual = new(
-        Visual,
-        "Microsoft.UI.Composition",
-        "ImageVisual",
-        "_compositor.CreateImageVisual()",
-        new()
-        {
-            ["HorizontalAlignmentRatio".ToLower()] = new("HorizontalAlignmentRatio"),
-            ["Image".ToLower()] = new("Image"),
-            ["Stretch".ToLower()] = new("Stretch"),
-            ["VerticalAlignmentRatio".ToLower()] = new("VerticalAlignmentRatio")
-        },
-        "Children.InsertAtTop"
-    );
-    
     private static readonly SharpObjectProvider LayerVisual = new(
         ContainerVisual,
         "Microsoft.UI.Composition",
@@ -501,21 +468,6 @@ partial class SharpObjectProvider
     );
     
     /// <summary>
-    /// Provider for the SolidColorVisual object.
-    /// </summary>
-    private static readonly SharpObjectProvider SolidColorVisual = new(
-        ContainerVisual,
-        "Microsoft.UI.Composition",
-        "SolidColorVisual",
-        "_compositor.CreateSolidColorVisual()",
-        new()
-        {
-            ["Color".ToLower()] = new("Color")
-        },
-        null
-    );
-    
-    /// <summary>
     /// Provider for the SpriteVisual object.
     /// </summary>
     private static readonly SharpObjectProvider SpriteVisual = new(
@@ -529,18 +481,6 @@ partial class SharpObjectProvider
             ["Shadow".ToLower()] = new("Shadow")
         },
         "Children.InsertAtTop"
-    );
-    
-    /// <summary>
-    /// Provider for the DelegatedInkTrailVisual object.
-    /// </summary>
-    private static readonly SharpObjectProvider DelegatedInkTrailVisual = new(
-        Visual,
-        "Microsoft.UI.Composition",
-        "DelegatedInkTrailVisual",
-        "_compositor.CreateDelegatedInkTrailVisual()",
-        new(),
-        null
     );
     
     /// <summary>
