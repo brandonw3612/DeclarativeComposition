@@ -73,6 +73,7 @@ public partial class SharpObjectProvider
             "GeometricClip" or "CompositionGeometricClip" => GeometricClip,
             "ImageVisual" => ImageVisual,
             "InsetClip" => InsetClip,
+            "LayerVisual" => LayerVisual,
             "LineGeometry" or "CompositionLineGeometry" => LineGeometry,
             "LinearGradientBrush" or "CompositionLinearGradientBrush" => LinearGradientBrush,
             "MaskBrush" or "CompositionMaskBrush" => MaskBrush,
