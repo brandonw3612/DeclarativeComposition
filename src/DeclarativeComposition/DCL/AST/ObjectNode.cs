@@ -44,7 +44,11 @@ public class ObjectNode(string type) : ExpressionNode
     public string Translate(Sharp.Translator translator)
     {
         var objectProvider = Sharp.ObjectProviders.SharpObjectProvider.FromTypeAlias(Type);
-        if (objectProvider is null) return string.Empty;
+        if (objectProvider?.ConstructorCall is null)
+        {
+            translator.InitializerBody.Add($"// Unable to create an object with type '{Type}': No constructor or factory method found.");
+            return "null";
+        }
         var fullClassName = $"{objectProvider.NamespaceName}.{objectProvider.ClassName}";
         if (Name is null && _anonymousId < 0)
         {
