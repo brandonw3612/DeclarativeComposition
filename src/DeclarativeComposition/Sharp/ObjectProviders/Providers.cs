@@ -302,7 +302,7 @@ partial class SharpObjectProvider
         CompositionObject,
         "Microsoft.UI.Composition",
         "CompositionColorGradientStop",
-        null,
+        "_compositor.CreateColorGradientStop()",
         new()
         {
             ["Color".ToLower()] = new("Color"),
