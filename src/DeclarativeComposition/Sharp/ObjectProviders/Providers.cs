@@ -5,14 +5,14 @@ partial class SharpObjectProvider
     /// <summary>
     /// Provider for the CompositionObject object.
     /// </summary>
-    public static readonly SharpObjectProvider CompositionObject = new(
+    private static readonly SharpObjectProvider CompositionObject = new(
         null,
         "Microsoft.UI.Composition",
         "CompositionObject",
         null,
         new()
         {
-            ["comment"] = new("Comment"),
+            ["Comment".ToLower()] = new("Comment"),
         },
         null
     );
@@ -20,14 +20,14 @@ partial class SharpObjectProvider
     /// <summary>
     /// Provider for the CompositionLight object.
     /// </summary>
-    public static readonly SharpObjectProvider CompositionLight = new(
+    private static readonly SharpObjectProvider CompositionLight = new(
         CompositionObject,
         "Microsoft.UI.Composition",
         "CompositionLight",
         null,
         new()
         {
-            ["isenabled"] = new("IsEnabled"),
+            ["IsEnabled".ToLower()] = new("IsEnabled"),
         },
         null
     );
@@ -35,15 +35,15 @@ partial class SharpObjectProvider
     /// <summary>
     /// Provider for the AmbientLight object.
     /// </summary>
-    public static readonly SharpObjectProvider AmbientLight = new(
+    private static readonly SharpObjectProvider AmbientLight = new(
         CompositionLight,
         "Microsoft.UI.Composition",
         "AmbientLight",
         "_compositor.CreateAmbientLight()",
         new()
         {
-            ["color"] = new("Color"),
-            ["intensity"] = new("Intensity")
+            ["Color".ToLower()] = new("Color"),
+            ["Intensity".ToLower()] = new("Intensity")
         },
         null
     );
@@ -51,17 +51,17 @@ partial class SharpObjectProvider
     /// <summary>
     /// Provider for the DistantLight object.
     /// </summary>
-    public static readonly SharpObjectProvider DistantLight = new(
+    private static readonly SharpObjectProvider DistantLight = new(
         CompositionLight,
         "Microsoft.UI.Composition",
         "DistantLight",
         "_compositor.CreateDistantLight()",
         new()
         {
-            ["color"] = new("Color"),
-            ["coordinatespace"] = new("CoordinateSpace"),
-            ["direction"] = new("Direction"),
-            ["intensity"] = new("Intensity")
+            ["Color".ToLower()] = new("Color"),
+            ["CoordinateSpace".ToLower()] = new("CoordinateSpace"),
+            ["Direction".ToLower()] = new("Direction"),
+            ["Intensity".ToLower()] = new("Intensity")
         },
         null
     );
@@ -69,22 +69,22 @@ partial class SharpObjectProvider
     /// <summary>
     /// Provider for the PointLight object.
     /// </summary>
-    public static readonly SharpObjectProvider PointLight = new(
+    private static readonly SharpObjectProvider PointLight = new(
         CompositionLight,
         "Microsoft.UI.Composition",
         "PointLight",
         "_compositor.CreatePointLight()",
         new()
         {
-            ["color"] = new("Color"),
-            ["constantattenuation"] = new("ConstantAttenuation"),
-            ["coordinatespace"] = new("CoordinateSpace"),
-            ["intensity"] = new("Intensity"),
-            ["linearattenuation"] = new("LinearAttenuation"),
-            ["maxattenuationcutoff"] = new("MaxAttenuationCutoff"),
-            ["minattenuationcutoff"] = new("MinAttenuationCutoff"),
-            ["offset"] = new("Offset"),
-            ["quadraticattenuation"] = new("QuadraticAttenuation")
+            ["Color".ToLower()] = new("Color"),
+            ["ConstantAttenuation".ToLower()] = new("ConstantAttenuation"),
+            ["CoordinateSpace".ToLower()] = new("CoordinateSpace"),
+            ["Intensity".ToLower()] = new("Intensity"),
+            ["LinearAttenuation".ToLower()] = new("LinearAttenuation"),
+            ["MaxAttenuationCutoff".ToLower()] = new("MaxAttenuationCutoff"),
+            ["MinAttenuationCutoff".ToLower()] = new("MinAttenuationCutoff"),
+            ["Offset".ToLower()] = new("Offset"),
+            ["QuadraticAttenuation".ToLower()] = new("QuadraticAttenuation")
         },
         null
     );
@@ -92,29 +92,29 @@ partial class SharpObjectProvider
     /// <summary>
     /// Provider for the SpotLight object.
     /// </summary>
-    public static readonly SharpObjectProvider SpotLight = new(
+    private static readonly SharpObjectProvider SpotLight = new(
         CompositionLight,
         "Microsoft.UI.Composition",
         "SpotLight",
         "_compositor.CreateSpotLight()",
         new()
         {
-            ["constantattenuation"] = new("ConstantAttenuation"),
-            ["coordinatespace"] = new("CoordinateSpace"),
-            ["direction"] = new("Direction"),
-            ["innerconeangle"] = new("InnerConeAngle"),
-            ["innerconeangleindegrees"] = new("InnerConeAngleInDegrees"),
-            ["innerconecolor"] = new("InnerConeColor"),
-            ["innerconeintensity"] = new("InnerConeIntensity"),
-            ["linearattenuation"] = new("LinearAttenuation"),
-            ["maxattenuationcutoff"] = new("MaxAttenuationCutoff"),
-            ["minattenuationcutoff"] = new("MinAttenuationCutoff"),
-            ["offset"] = new("Offset"),
-            ["outerconeangle"] = new("OuterConeAngle"),
-            ["outerconeangleindegrees"] = new("OuterConeAngleInDegrees"),
-            ["outerconecolor"] = new("OuterConeColor"),
-            ["outerconeintensity"] = new("OuterConeIntensity"),
-            ["quadraticattenuation"] = new("QuadraticAttenuation")
+            ["ConstantAttenuation".ToLower()] = new("ConstantAttenuation"),
+            ["CoordinateSpace".ToLower()] = new("CoordinateSpace"),
+            ["Direction".ToLower()] = new("Direction"),
+            ["InnerConeAngle".ToLower()] = new("InnerConeAngle"),
+            ["InnerConeAngleInDegrees".ToLower()] = new("InnerConeAngleInDegrees"),
+            ["InnerConeColor".ToLower()] = new("InnerConeColor"),
+            ["InnerConeIntensity".ToLower()] = new("InnerConeIntensity"),
+            ["LinearAttenuation".ToLower()] = new("LinearAttenuation"),
+            ["MaxAttenuationCutoff".ToLower()] = new("MaxAttenuationCutoff"),
+            ["MinAttenuationCutoff".ToLower()] = new("MinAttenuationCutoff"),
+            ["Offset".ToLower()] = new("Offset"),
+            ["OuterConeAngle".ToLower()] = new("OuterConeAngle"),
+            ["OuterConeAngleInDegrees".ToLower()] = new("OuterConeAngleInDegrees"),
+            ["OuterConeColor".ToLower()] = new("OuterConeColor"),
+            ["OuterConeIntensity".ToLower()] = new("OuterConeIntensity"),
+            ["QuadraticAttenuation".ToLower()] = new("QuadraticAttenuation")
         },
         null
     );
@@ -122,7 +122,7 @@ partial class SharpObjectProvider
     /// <summary>
     /// Provider for the CompositionBrush object.
     /// </summary>
-    public static readonly SharpObjectProvider CompositionBrush = new(
+    private static readonly SharpObjectProvider CompositionBrush = new(
         CompositionObject,
         "Microsoft.UI.Composition",
         "CompositionBrush",
@@ -134,7 +134,7 @@ partial class SharpObjectProvider
     /// <summary>
     /// Provider for the CompositionBackdropBrush object.
     /// </summary>
-    public static readonly SharpObjectProvider BackdropBrush = new(
+    private static readonly SharpObjectProvider BackdropBrush = new(
         CompositionBrush,
         "Microsoft.UI.Composition",
         "CompositionBackdropBrush",
@@ -146,14 +146,14 @@ partial class SharpObjectProvider
     /// <summary>
     /// Provider for the CompositionColorBrush object.
     /// </summary>
-    public static readonly SharpObjectProvider ColorBrush = new(
+    private static readonly SharpObjectProvider ColorBrush = new(
         CompositionBrush,
         "Microsoft.UI.Composition",
         "CompositionColorBrush",
         "_compositor.CreateColorBrush()",
         new()
         {
-            ["color"] = new("Color")
+            ["Color".ToLower()] = new("Color")
         },
         null
     );
@@ -161,7 +161,7 @@ partial class SharpObjectProvider
     /// <summary>
     /// Provider for the CompositionEffectBrush object.
     /// </summary>
-    public static readonly SharpObjectProvider EffectBrush = new(
+    private static readonly SharpObjectProvider EffectBrush = new(
         CompositionBrush,
         "Microsoft.UI.Composition",
         "CompositionEffectBrush",
@@ -173,24 +173,24 @@ partial class SharpObjectProvider
     /// <summary>
     /// Provider for the CompositionGradientBrush object.
     /// </summary>
-    public static readonly SharpObjectProvider GradientBrush = new(
+    private static readonly SharpObjectProvider GradientBrush = new(
         CompositionBrush,
         "Microsoft.UI.Composition",
         "CompositionGradientBrush",
         null,
         new()
         {
-            ["anchorpoint"] = new("AnchorPoint"),
-            ["centerpoint"] = new("CenterPoint"),
-            ["colorstops"] = new("ColorStops"),
-            ["extendmode"] = new("ExtendMode"),
-            ["interpolationspace"] = new("InterpolationSpace"),
-            ["mappingmode"] = new("MappingMode"),
-            ["offset"] = new("Offset"),
-            ["rotationangle"] = new("RotationAngle"),
-            ["rotationangleindegrees"] = new("RotationAngleInDegrees"),
-            ["scale"] = new("Scale"),
-            ["transformmatrix"] = new("TransformMatrix")
+            ["AnchorPoint".ToLower()] = new("AnchorPoint"),
+            ["CenterPoint".ToLower()] = new("CenterPoint"),
+            ["ColorStops".ToLower()] = new("ColorStops"),
+            ["ExtendMode".ToLower()] = new("ExtendMode"),
+            ["InterpolationSpace".ToLower()] = new("InterpolationSpace"),
+            ["MappingMode".ToLower()] = new("MappingMode"),
+            ["Offset".ToLower()] = new("Offset"),
+            ["RotationAngle".ToLower()] = new("RotationAngle"),
+            ["RotationAngleInDegrees".ToLower()] = new("RotationAngleInDegrees"),
+            ["Scale".ToLower()] = new("Scale"),
+            ["TransformMatrix".ToLower()] = new("TransformMatrix")
         },
         null
     );
@@ -198,15 +198,15 @@ partial class SharpObjectProvider
     /// <summary>
     /// Provider for the CompositionLinearGradientBrush object.
     /// </summary>
-    public static readonly SharpObjectProvider LinearGradientBrush = new(
+    private static readonly SharpObjectProvider LinearGradientBrush = new(
         GradientBrush,
         "Microsoft.UI.Composition",
         "CompositionLinearGradientBrush",
         "_compositor.CreateLinearGradientBrush()",
         new()
         {
-            ["endpoint"] = new("EndPoint"),
-            ["startpoint"] = new("StartPoint")
+            ["EndPoint".ToLower()] = new("EndPoint"),
+            ["StartPoint".ToLower()] = new("StartPoint")
         },
         null
     );
@@ -214,16 +214,16 @@ partial class SharpObjectProvider
     /// <summary>
     /// Provider for the CompositionRadialGradientBrush object.
     /// </summary>
-    public static readonly SharpObjectProvider RadialGradientBrush = new(
+    private static readonly SharpObjectProvider RadialGradientBrush = new(
         GradientBrush,
         "Microsoft.UI.Composition",
         "CompositionRadialGradientBrush",
         "_compositor.CreateRadialGradientBrush()",
         new()
         {
-            ["ellipsecenter"] = new("EllipseCenter"),
-            ["ellipseradius"] = new("EllipseRadius"),
-            ["gradientoriginoffset"] = new("GradientOriginOffset")
+            ["EllipseCenter".ToLower()] = new("EllipseCenter"),
+            ["EllipseRadius".ToLower()] = new("EllipseRadius"),
+            ["GradientOriginOffset".ToLower()] = new("GradientOriginOffset")
         },
         null
     );
@@ -231,15 +231,15 @@ partial class SharpObjectProvider
     /// <summary>
     /// Provider for the CompositionMaskBrush object.
     /// </summary>
-    public static readonly SharpObjectProvider MaskBrush = new(
+    private static readonly SharpObjectProvider MaskBrush = new(
         CompositionBrush,
         "Microsoft.UI.Composition",
         "CompositionMaskBrush",
         "_compositor.CreateMaskBrush()",
         new()
         {
-            ["mask"] = new("Mask"),
-            ["source"] = new("Source")
+            ["Mask".ToLower()] = new("Mask"),
+            ["Source".ToLower()] = new("Source")
         },
         null
     );
@@ -247,23 +247,23 @@ partial class SharpObjectProvider
     /// <summary>
     /// Provider for the CompositionNineGridBrush object.
     /// </summary>
-    public static readonly SharpObjectProvider NineGridBrush = new(
+    private static readonly SharpObjectProvider NineGridBrush = new(
         CompositionBrush,
         "Microsoft.UI.Composition",
         "CompositionNineGridBrush",
         "_compositor.CreateNineGridBrush()",
         new()
         {
-            ["bottominset"] = new("BottomInset"),
-            ["bottominsetscale"] = new("BottomInsetScale"),
-            ["iscenterhollow"] = new("IsCenterHollow"),
-            ["leftinset"] = new("LeftInset"),
-            ["leftinsetscale"] = new("LeftInsetScale"),
-            ["rightinset"] = new("RightInset"),
-            ["rightinsetscale"] = new("RightInsetScale"),
-            ["source"] = new("Source"),
-            ["topinset"] = new("TopInset"),
-            ["topinsetscale"] = new("TopInsetScale")
+            ["BottomInset".ToLower()] = new("BottomInset"),
+            ["BottomInsetScale".ToLower()] = new("BottomInsetScale"),
+            ["IsCenterHollow".ToLower()] = new("IsCenterHollow"),
+            ["LeftInset".ToLower()] = new("LeftInset"),
+            ["LeftInsetScale".ToLower()] = new("LeftInsetScale"),
+            ["RightInset".ToLower()] = new("RightInset"),
+            ["RightInsetScale".ToLower()] = new("RightInsetScale"),
+            ["Source".ToLower()] = new("Source"),
+            ["TopInset".ToLower()] = new("TopInset"),
+            ["TopInsetScale".ToLower()] = new("TopInsetScale")
         },
         null
     );
@@ -271,26 +271,26 @@ partial class SharpObjectProvider
     /// <summary>
     /// Provider for the CompositionSurfaceBrush object.
     /// </summary>
-    public static readonly SharpObjectProvider SurfaceBrush = new(
+    private static readonly SharpObjectProvider SurfaceBrush = new(
         CompositionBrush,
         "Microsoft.UI.Composition",
         "CompositionSurfaceBrush",
         "_compositor.CreateSurfaceBrush()",
         new()
         {
-            ["anchorpoint"] = new("AnchorPoint"),
-            ["bitmapinterpolationmode"] = new("BitmapInterpolationMode"),
-            ["centerpoint"] = new("CenterPoint"),
-            ["horizontalalignmentratio"] = new("HorizontalAlignmentRatio"),
-            ["offset"] = new("Offset"),
-            ["rotationangle"] = new("RotationAngle"),
-            ["rotationangleindegrees"] = new("RotationAngleInDegrees"),
-            ["scale"] = new("Scale"),
-            ["snaptopixels"] = new("SnapToPixels"),
-            ["stretch"] = new("Stretch"),
-            ["surface"] = new("Surface"),
-            ["transformmatrix"] = new("TransformMatrix"),
-            ["verticalalignmentratio"] = new("VerticalAlignmentRatio")
+            ["AnchorPoint".ToLower()] = new("AnchorPoint"),
+            ["BitmapInterpolationMode".ToLower()] = new("BitmapInterpolationMode"),
+            ["CenterPoint".ToLower()] = new("CenterPoint"),
+            ["HorizontalAlignmentRatio".ToLower()] = new("HorizontalAlignmentRatio"),
+            ["Offset".ToLower()] = new("Offset"),
+            ["RotationAngle".ToLower()] = new("RotationAngle"),
+            ["RotationAngleInDegrees".ToLower()] = new("RotationAngleInDegrees"),
+            ["Scale".ToLower()] = new("Scale"),
+            ["SnapToPixels".ToLower()] = new("SnapToPixels"),
+            ["Stretch".ToLower()] = new("Stretch"),
+            ["Surface".ToLower()] = new("Surface"),
+            ["TransformMatrix".ToLower()] = new("TransformMatrix"),
+            ["VerticalAlignmentRatio".ToLower()] = new("VerticalAlignmentRatio")
         },
         null
     );
@@ -298,15 +298,15 @@ partial class SharpObjectProvider
     /// <summary>
     /// Provider for the CompositionColorGradientStop object.
     /// </summary>
-    public static readonly SharpObjectProvider ColorGradientStop = new(
+    private static readonly SharpObjectProvider ColorGradientStop = new(
         CompositionObject,
         "Microsoft.UI.Composition",
         "CompositionColorGradientStop",
         null,
         new()
         {
-            ["color"] = new("Color"),
-            ["offset"] = new("Offset")
+            ["Color".ToLower()] = new("Color"),
+            ["Offset".ToLower()] = new("Offset")
         },
         null
     );
@@ -314,19 +314,19 @@ partial class SharpObjectProvider
     /// <summary>
     /// Provider for the CompositionShape object.
     /// </summary>
-    public static readonly SharpObjectProvider CompositionShape = new(
+    private static readonly SharpObjectProvider CompositionShape = new(
         CompositionObject,
         "Microsoft.UI.Composition",
         "CompositionShape",
         null,
         new()
         {
-            ["centerpoint"] = new("CenterPoint"),
-            ["offset"] = new("Offset"),
-            ["rotationangle"] = new("RotationAngle"),
-            ["rotationangleindegrees"] = new("RotationAngleInDegrees"),
-            ["scale"] = new("Scale"),
-            ["transformmatrix"] = new("TransformMatrix")
+            ["CenterPoint".ToLower()] = new("CenterPoint"),
+            ["Offset".ToLower()] = new("Offset"),
+            ["RotationAngle".ToLower()] = new("RotationAngle"),
+            ["RotationAngleInDegrees".ToLower()] = new("RotationAngleInDegrees"),
+            ["Scale".ToLower()] = new("Scale"),
+            ["TransformMatrix".ToLower()] = new("TransformMatrix")
         },
         null
     );
@@ -334,7 +334,7 @@ partial class SharpObjectProvider
     /// <summary>
     /// Provider for the ContainerShape object.
     /// </summary>
-    public static readonly SharpObjectProvider ContainerShape = new(
+    private static readonly SharpObjectProvider ContainerShape = new(
         CompositionShape,
         "Microsoft.UI.Composition",
         "ContainerShape",
@@ -346,26 +346,26 @@ partial class SharpObjectProvider
     /// <summary>
     /// Provider for the CompositionSpriteShape object.
     /// </summary>
-    public static readonly SharpObjectProvider SpriteShape = new(
+    private static readonly SharpObjectProvider SpriteShape = new(
         CompositionShape,
         "Microsoft.UI.Composition",
         "CompositionSpriteShape",
         "_compositor.CreateSpriteShape()",
         new()
         {
-            ["fillbrush"] = new("FillBrush"),
-            ["geometry"] = new("Geometry"),
-            ["isstrokenonscaling"] = new("IsStrokeNonScaling"),
-            ["strokebrush"] = new("StrokeBrush"),
-            ["strokedasharray"] = new("StrokeDashArray"),
-            ["strokedashcap"] = new("StrokeDashCap"),
-            ["strokedashoffset"] = new("StrokeDashOffset"),
-            ["strokeendcap"] = new("StrokeEndCap"),
-            ["strokelinejoin"] = new("StrokeLineJoin"),
-            ["strokemiterlimit"] = new("StrokeMiterLimit"),
-            ["strokeoffset"] = new("StrokeOffset"),
-            ["strokestartcap"] = new("StrokeStartCap"),
-            ["strokethickness"] = new("StrokeThickness")
+            ["FillBrush".ToLower()] = new("FillBrush"),
+            ["Geometry".ToLower()] = new("Geometry"),
+            ["IsStrokeNonScaling".ToLower()] = new("IsStrokeNonScaling"),
+            ["StrokeBrush".ToLower()] = new("StrokeBrush"),
+            ["StrokeDashArray".ToLower()] = new("StrokeDashArray"),
+            ["StrokeDashCap".ToLower()] = new("StrokeDashCap"),
+            ["StrokeDashOffset".ToLower()] = new("StrokeDashOffset"),
+            ["StrokeEndCap".ToLower()] = new("StrokeEndCap"),
+            ["StrokeLineJoin".ToLower()] = new("StrokeLineJoin"),
+            ["StrokeMiterLimit".ToLower()] = new("StrokeMiterLimit"),
+            ["StrokeOffset".ToLower()] = new("StrokeOffset"),
+            ["StrokeStartCap".ToLower()] = new("StrokeStartCap"),
+            ["StrokeThickness".ToLower()] = new("StrokeThickness")
         },
         null
     );
@@ -373,34 +373,34 @@ partial class SharpObjectProvider
     /// <summary>
     /// Provider for the Visual object.
     /// </summary>
-    public static readonly SharpObjectProvider Visual = new(
+    private static readonly SharpObjectProvider Visual = new(
         CompositionObject,
         "Microsoft.UI.Composition",
         "Visual",
         null,
         new()
         {
-            ["anchorpoint"] = new("AnchorPoint"),
-            ["backfacevisibility"] = new("BackfaceVisibility"),
-            ["bordermode"] = new("BorderMode"),
-            ["centerpoint"] = new("CenterPoint"),
-            ["clip"] = new("Clip"),
-            ["compositemode"] = new("CompositeMode"),
-            ["ishittestvisible"] = new("IsHitTestVisible"),
-            ["ispixelsnappingenabled"] = new("IsPixelSnappingEnabled"),
-            ["isvisible"] = new("IsVisible"),
-            ["offset"] = new("Offset"),
-            ["opacity"] = new("Opacity"),
-            ["orientation"] = new("Orientation"),
-            ["parentfortransform"] = new("ParentForTransform"),
-            ["relativeoffsetadjustment"] = new("RelativeOffsetAdjustment"),
-            ["relativesizeadjustment"] = new("RelativeSizeAdjustment"),
-            ["rotationangle"] = new("RotationAngle"),
-            ["rotationangleindegrees"] = new("RotationAngleInDegrees"),
-            ["rotationaxis"] = new("RotationAxis"),
-            ["scale"] = new("Scale"),
-            ["size"] = new("Size"),
-            ["transformmatrix"] = new("TransformMatrix")
+            ["AnchorPoint".ToLower()] = new("AnchorPoint"),
+            ["BackfaceVisibility".ToLower()] = new("BackfaceVisibility"),
+            ["BorderMode".ToLower()] = new("BorderMode"),
+            ["CenterPoint".ToLower()] = new("CenterPoint"),
+            ["Clip".ToLower()] = new("Clip"),
+            ["CompositeMode".ToLower()] = new("CompositeMode"),
+            ["IsHitTestVisible".ToLower()] = new("IsHitTestVisible"),
+            ["IsPixelSnappingEnabled".ToLower()] = new("IsPixelSnappingEnabled"),
+            ["IsVisible".ToLower()] = new("IsVisible"),
+            ["Offset".ToLower()] = new("Offset"),
+            ["Opacity".ToLower()] = new("Opacity"),
+            ["Orientation".ToLower()] = new("Orientation"),
+            ["ParentForTransform".ToLower()] = new("ParentForTransform"),
+            ["RelativeOffsetAdjustment".ToLower()] = new("RelativeOffsetAdjustment"),
+            ["RelativeSizeAdjustment".ToLower()] = new("RelativeSizeAdjustment"),
+            ["RotationAngle".ToLower()] = new("RotationAngle"),
+            ["RotationAngleInDegrees".ToLower()] = new("RotationAngleInDegrees"),
+            ["RotationAxis".ToLower()] = new("RotationAxis"),
+            ["Scale".ToLower()] = new("Scale"),
+            ["Size".ToLower()] = new("Size"),
+            ["TransformMatrix".ToLower()] = new("TransformMatrix")
         },
         null
     );
@@ -408,7 +408,7 @@ partial class SharpObjectProvider
     /// <summary>
     /// Provider for the ContainerVisual object.
     /// </summary>
-    public static readonly SharpObjectProvider ContainerVisual = new(
+    private static readonly SharpObjectProvider ContainerVisual = new(
         Visual,
         "Microsoft.UI.Composition",
         "ContainerVisual",
@@ -420,14 +420,14 @@ partial class SharpObjectProvider
     /// <summary>
     /// Provider for the EffectVisual object.
     /// </summary>
-    public static readonly SharpObjectProvider EffectVisual = new(
+    private static readonly SharpObjectProvider EffectVisual = new(
         Visual,
         "Microsoft.UI.Composition",
         "EffectVisual",
         "_compositor.CreateEffectVisual()",
         new()
         {
-            ["effect"] = new("Effect"),
+            ["Effect".ToLower()] = new("Effect"),
         },
         "Children.InsertAtTop"
     );
@@ -435,22 +435,22 @@ partial class SharpObjectProvider
     /// <summary>
     /// Provider for the ImageVisual object.
     /// </summary>
-    public static readonly SharpObjectProvider ImageVisual = new(
+    private static readonly SharpObjectProvider ImageVisual = new(
         Visual,
         "Microsoft.UI.Composition",
         "ImageVisual",
         "_compositor.CreateImageVisual()",
         new()
         {
-            ["horizontalalignmentratio"] = new("HorizontalAlignmentRatio"),
-            ["image"] = new("Image"),
-            ["stretch"] = new("Stretch"),
-            ["verticalalignmentratio"] = new("VerticalAlignmentRatio")
+            ["HorizontalAlignmentRatio".ToLower()] = new("HorizontalAlignmentRatio"),
+            ["Image".ToLower()] = new("Image"),
+            ["Stretch".ToLower()] = new("Stretch"),
+            ["VerticalAlignmentRatio".ToLower()] = new("VerticalAlignmentRatio")
         },
         "Children.InsertAtTop"
     );
     
-    public static readonly SharpObjectProvider LayerVisual = new(
+    private static readonly SharpObjectProvider LayerVisual = new(
         ContainerVisual,
         "Microsoft.UI.Composition",
         "LayerVisual",
@@ -462,14 +462,14 @@ partial class SharpObjectProvider
     /// <summary>
     /// Provider for the RedirectVisual object.
     /// </summary>
-    public static readonly SharpObjectProvider RedirectVisual = new(
+    private static readonly SharpObjectProvider RedirectVisual = new(
         ContainerVisual,
         "Microsoft.UI.Composition",
         "RedirectVisual",
         "_compositor.CreateRedirectVisual()",
         new()
         {
-            ["source"] = new("Source")
+            ["Source".ToLower()] = new("Source")
         },
         "Children.InsertAtTop"
     );
@@ -477,14 +477,14 @@ partial class SharpObjectProvider
     /// <summary>
     /// Provider for the SceneVisual object.
     /// </summary>
-    public static readonly SharpObjectProvider SceneVisual = new(
+    private static readonly SharpObjectProvider SceneVisual = new(
         ContainerVisual,
         "Microsoft.UI.Composition.Scenes",
         "SceneVisual",
         "_compositor.CreateSceneVisual()",
         new()
         {
-            ["root"] = new("Root")
+            ["Root".ToLower()] = new("Root")
         },
         "Children.InsertAtTop"
     );
@@ -492,7 +492,7 @@ partial class SharpObjectProvider
     /// <summary>
     /// Provider for the ShapeVisual object.
     /// </summary>
-    public static readonly SharpObjectProvider ShapeVisual = new(
+    private static readonly SharpObjectProvider ShapeVisual = new(
         ContainerVisual,
         "Microsoft.UI.Composition",
         "ShapeVisual",
@@ -504,14 +504,14 @@ partial class SharpObjectProvider
     /// <summary>
     /// Provider for the SolidColorVisual object.
     /// </summary>
-    public static readonly SharpObjectProvider SolidColorVisual = new(
+    private static readonly SharpObjectProvider SolidColorVisual = new(
         ContainerVisual,
         "Microsoft.UI.Composition",
         "SolidColorVisual",
         "_compositor.CreateSolidColorVisual()",
         new()
         {
-            ["color"] = new("Color")
+            ["Color".ToLower()] = new("Color")
         },
         null
     );
@@ -519,15 +519,15 @@ partial class SharpObjectProvider
     /// <summary>
     /// Provider for the SpriteVisual object.
     /// </summary>
-    public static readonly SharpObjectProvider SpriteVisual = new(
+    private static readonly SharpObjectProvider SpriteVisual = new(
         ContainerVisual,
         "Microsoft.UI.Composition",
         "SpriteVisual",
         "_compositor.CreateSpriteVisual()",
         new()
         {
-            ["brush"] = new("Brush"),
-            ["shadow"] = new("Shadow")
+            ["Brush".ToLower()] = new("Brush"),
+            ["Shadow".ToLower()] = new("Shadow")
         },
         "Children.InsertAtTop"
     );
@@ -535,7 +535,7 @@ partial class SharpObjectProvider
     /// <summary>
     /// Provider for the DelegatedInkTrailVisual object.
     /// </summary>
-    public static readonly SharpObjectProvider DelegatedInkTrailVisual = new(
+    private static readonly SharpObjectProvider DelegatedInkTrailVisual = new(
         Visual,
         "Microsoft.UI.Composition",
         "DelegatedInkTrailVisual",
@@ -547,7 +547,7 @@ partial class SharpObjectProvider
     /// <summary>
     /// Provider for the CompositionShadow object.
     /// </summary>
-    public static readonly SharpObjectProvider CompositionShadow = new(
+    private static readonly SharpObjectProvider CompositionShadow = new(
         CompositionObject,
         "Microsoft.UI.Composition",
         "CompositionShadow",
@@ -559,19 +559,19 @@ partial class SharpObjectProvider
     /// <summary>
     /// Provider for the DropShadow object.
     /// </summary>
-    public static readonly SharpObjectProvider DropShadow = new(
+    private static readonly SharpObjectProvider DropShadow = new(
         CompositionShadow,
         "Microsoft.UI.Composition",
         "DropShadow",
         "_compositor.CreateDropShadow()",
         new()
         {
-            ["blurradius"] = new("BlurRadius"),
-            ["color"] = new("Color"),
-            ["mask"] = new("Mask"),
-            ["offset"] = new("Offset"),
-            ["opacity"] = new("Opacity"),
-            ["sourcepolicy"] = new("SourcePolicy")
+            ["BlurRadius".ToLower()] = new("BlurRadius"),
+            ["Color".ToLower()] = new("Color"),
+            ["Mask".ToLower()] = new("Mask"),
+            ["Offset".ToLower()] = new("Offset"),
+            ["Opacity".ToLower()] = new("Opacity"),
+            ["SourcePolicy".ToLower()] = new("SourcePolicy")
         },
         null
     );
@@ -579,16 +579,16 @@ partial class SharpObjectProvider
     /// <summary>
     /// Provider for the CompositionGeometry object.
     /// </summary>
-    public static readonly SharpObjectProvider CompositionGeometry = new(
+    private static readonly SharpObjectProvider CompositionGeometry = new(
         CompositionObject,
         "Microsoft.UI.Composition",
         "CompositionGeometry",
         null,
         new()
         {
-            ["trimend"] = new("TrimEnd"),
-            ["trimoffset"] = new("TrimOffset"),
-            ["trimstart"] = new("TrimStart")
+            ["TrimEnd".ToLower()] = new("TrimEnd"),
+            ["TrimOffset".ToLower()] = new("TrimOffset"),
+            ["TrimStart".ToLower()] = new("TrimStart")
         },
         null
     );
@@ -596,15 +596,15 @@ partial class SharpObjectProvider
     /// <summary>
     /// Provider for the CompositionEllipseGeometry object.
     /// </summary>
-    public static readonly SharpObjectProvider EllipseGeometry = new(
+    private static readonly SharpObjectProvider EllipseGeometry = new(
         CompositionGeometry,
         "Microsoft.UI.Composition",
         "CompositionEllipseGeometry",
         "_compositor.CreateEllipseGeometry()",
         new()
         {
-            ["center"] = new("Center"),
-            ["radius"] = new("Radius")
+            ["Center".ToLower()] = new("Center"),
+            ["Radius".ToLower()] = new("Radius")
         },
         null
     );
@@ -612,15 +612,15 @@ partial class SharpObjectProvider
     /// <summary>
     /// Provider for the CompositionLineGeometry object.
     /// </summary>
-    public static readonly SharpObjectProvider LineGeometry = new(
+    private static readonly SharpObjectProvider LineGeometry = new(
         CompositionGeometry,
         "Microsoft.UI.Composition",
         "CompositionLineGeometry",
         "_compositor.CreateLineGeometry()",
         new()
         {
-            ["end"] = new("End"),
-            ["start"] = new("Start")
+            ["End".ToLower()] = new("End"),
+            ["Start".ToLower()] = new("Start")
         },
         null
     );
@@ -628,14 +628,14 @@ partial class SharpObjectProvider
     /// <summary>
     /// Provider for the CompositionPathGeometry object.
     /// </summary>
-    public static readonly SharpObjectProvider PathGeometry = new(
+    private static readonly SharpObjectProvider PathGeometry = new(
         CompositionGeometry,
         "Microsoft.UI.Composition",
         "CompositionPathGeometry",
         "_compositor.CreatePathGeometry()",
         new()
         {
-            ["path"] = new("Path")
+            ["Path".ToLower()] = new("Path")
         },
         null
     );
@@ -643,15 +643,15 @@ partial class SharpObjectProvider
     /// <summary>
     /// Provider for the CompositionRectangleGeometry object.
     /// </summary>
-    public static readonly SharpObjectProvider RectangleGeometry = new(
+    private static readonly SharpObjectProvider RectangleGeometry = new(
         CompositionGeometry,
         "Microsoft.UI.Composition",
         "CompositionRectangleGeometry",
         "_compositor.CreateRectangleGeometry()",
         new()
         {
-            ["offset"] = new("Offset"),
-            ["size"] = new("Size")
+            ["Offset".ToLower()] = new("Offset"),
+            ["Size".ToLower()] = new("Size")
         },
         null
     );
@@ -659,16 +659,16 @@ partial class SharpObjectProvider
     /// <summary>
     /// Provider for the CompositionRoundedRectangleGeometry object.
     /// </summary>
-    public static readonly SharpObjectProvider RoundedRectangleGeometry = new(
+    private static readonly SharpObjectProvider RoundedRectangleGeometry = new(
         CompositionGeometry,
         "Microsoft.UI.Composition",
         "CompositionRoundedRectangleGeometry",
         "_compositor.CreateRoundedRectangleGeometry()",
         new()
         {
-            ["cornerradius"] = new("CornerRadius"),
-            ["offset"] = new("Offset"),
-            ["size"] = new("Size")
+            ["CornerRadius".ToLower()] = new("CornerRadius"),
+            ["Offset".ToLower()] = new("Offset"),
+            ["Size".ToLower()] = new("Size")
         },
         null
     );
@@ -676,20 +676,20 @@ partial class SharpObjectProvider
     /// <summary>
     /// Provider for the CompositionClip object.
     /// </summary>
-    public static readonly SharpObjectProvider CompositionClip = new(
+    private static readonly SharpObjectProvider CompositionClip = new(
         CompositionObject,
         "Microsoft.UI.Composition",
         "CompositionClip",
         null,
         new()
         {
-            ["anchorpoint"] = new("AnchorPoint"),
-            ["centerpoint"] = new("CenterPoint"),
-            ["offset"] = new("Offset"),
-            ["rotationangle"] = new("RotationAngle"),
-            ["rotationangleindegrees"] = new("RotationAngleInDegrees"),
-            ["scale"] = new("Scale"),
-            ["transformmatrix"] = new("TransformMatrix")
+            ["AnchorPoint".ToLower()] = new("AnchorPoint"),
+            ["CenterPoint".ToLower()] = new("CenterPoint"),
+            ["Offset".ToLower()] = new("Offset"),
+            ["RotationAngle".ToLower()] = new("RotationAngle"),
+            ["RotationAngleInDegrees".ToLower()] = new("RotationAngleInDegrees"),
+            ["Scale".ToLower()] = new("Scale"),
+            ["TransformMatrix".ToLower()] = new("TransformMatrix")
         },
         null
     );
@@ -697,15 +697,15 @@ partial class SharpObjectProvider
     /// <summary>
     /// Provider for the CompositionGeometricClip object.
     /// </summary>
-    public static readonly SharpObjectProvider GeometricClip = new(
+    private static readonly SharpObjectProvider GeometricClip = new(
         CompositionClip,
         "Microsoft.UI.Composition",
         "CompositionGeometricClip",
         "_compositor.CreateGeometricClip()",
         new()
         {
-            ["geometry"] = new("Geometry"),
-            ["viewbox"] = new("ViewBox")
+            ["Geometry".ToLower()] = new("Geometry"),
+            ["ViewBox".ToLower()] = new("ViewBox")
         },
         null
     );
@@ -713,17 +713,17 @@ partial class SharpObjectProvider
     /// <summary>
     /// Provider for the InsetClip object.
     /// </summary>
-    public static readonly SharpObjectProvider InsetClip = new(
+    private static readonly SharpObjectProvider InsetClip = new(
         CompositionClip,
         "Microsoft.UI.Composition",
         "InsetClip",
         "_compositor.CreateInsetClip()",
         new()
         {
-            ["bottominset"] = new("BottomInset"),
-            ["leftinset"] = new("LeftInset"),
-            ["rightinset"] = new("RightInset"),
-            ["topinset"] = new("TopInset")
+            ["BottomInset".ToLower()] = new("BottomInset"),
+            ["LeftInset".ToLower()] = new("LeftInset"),
+            ["RightInset".ToLower()] = new("RightInset"),
+            ["TopInset".ToLower()] = new("TopInset")
         },
         null
     );
@@ -731,21 +731,21 @@ partial class SharpObjectProvider
     /// <summary>
     /// Provider for the RectangleClip object.
     /// </summary>
-    public static readonly SharpObjectProvider RectangleClip = new(
+    private static readonly SharpObjectProvider RectangleClip = new(
         CompositionClip,
         "Microsoft.UI.Composition",
         "RectangleClip",
         "_compositor.CreateRectangleClip()",
         new()
         {
-            ["bottom"] = new("Bottom"),
-            ["bottomleftradius"] = new("BottomLeftRadius"),
-            ["bottomrightradius"] = new("BottomRightRadius"),
-            ["left"] = new("Left"),
-            ["right"] = new("Right"),
-            ["top"] = new("Top"),
-            ["topleftradius"] = new("TopLeftRadius"),
-            ["toprightradius"] = new("TopRightRadius")
+            ["Bottom".ToLower()] = new("Bottom"),
+            ["BottomLeftRadius".ToLower()] = new("BottomLeftRadius"),
+            ["BottomRightRadius".ToLower()] = new("BottomRightRadius"),
+            ["Left".ToLower()] = new("Left"),
+            ["Right".ToLower()] = new("Right"),
+            ["Top".ToLower()] = new("Top"),
+            ["TopLeftRadius".ToLower()] = new("TopLeftRadius"),
+            ["TopRightRadius".ToLower()] = new("TopRightRadius")
         },
         null
     );
@@ -753,19 +753,19 @@ partial class SharpObjectProvider
     /// <summary>
     /// Provider for the CompositionProjectedShadow object.
     /// </summary>
-    public static readonly SharpObjectProvider ProjectedShadow = new(
+    private static readonly SharpObjectProvider ProjectedShadow = new(
         CompositionObject,
         "Microsoft.UI.Composition",
         "CompositionProjectedShadow",
         "_compositor.CreateProjectedShadow()",
         new()
         {
-            ["blurradiusmultiplier"] = new("BlurRadiusMultiplier"),
-            ["casters"] = new("Casters"),
-            ["lightsource"] = new("LightSource"),
-            ["maxblurradius"] = new("MaxBlurRadius"),
-            ["minblurradius"] = new("MinBlurRadius"),
-            ["receivers"] = new("Receivers")
+            ["BlurRadiusMultiplier".ToLower()] = new("BlurRadiusMultiplier"),
+            ["Casters".ToLower()] = new("Casters"),
+            ["LightSource".ToLower()] = new("LightSource"),
+            ["MaxBlurRadius".ToLower()] = new("MaxBlurRadius"),
+            ["MinBlurRadius".ToLower()] = new("MinBlurRadius"),
+            ["Receivers".ToLower()] = new("Receivers")
         },
         null
     );
@@ -773,15 +773,15 @@ partial class SharpObjectProvider
     /// <summary>
     /// Provider for the CompositionProjectedShadowCaster object.
     /// </summary>
-    public static readonly SharpObjectProvider ProjectedShadowCaster = new(
+    private static readonly SharpObjectProvider ProjectedShadowCaster = new(
         CompositionObject,
         "Microsoft.UI.Composition",
         "CompositionProjectedShadowCaster",
         null,
         new()
         {
-            ["brush"] = new("Brush"),
-            ["castingvisual"] = new("CastingVisual"),
+            ["Brush".ToLower()] = new("Brush"),
+            ["CastingVisual".ToLower()] = new("CastingVisual"),
         },
         null
     );
@@ -789,44 +789,44 @@ partial class SharpObjectProvider
     /// <summary>
     /// Provider for the CompositionProjectedShadowReceiver object.
     /// </summary>
-    public static readonly SharpObjectProvider ProjectedShadowReceiver = new(
+    private static readonly SharpObjectProvider ProjectedShadowReceiver = new(
         CompositionObject,
         "Microsoft.UI.Composition",
         "CompositionProjectedShadowReceiver",
         null,
         new()
         {
-            ["receivingvisual"] = new("ReceivingVisual"),
+            ["ReceivingVisual".ToLower()] = new("ReceivingVisual"),
         },
         null
     );
     
-    public static readonly SharpObjectProvider ViewBox = new(
+    private static readonly SharpObjectProvider ViewBox = new(
         CompositionObject,
         "Microsoft.UI.Composition",
         "CompositionViewBox",
         "_compositor.CreateViewBox()",
         new()
         {
-            ["horizontalalignmentratio"] = new("HorizontalAlignmentRatio"),
-            ["offset"] = new("Offset"),
-            ["size"] = new("Size"),
-            ["stretch"] = new("Stretch"),
-            ["verticalalignmentratio"] = new("VerticalAlignmentRatio")
+            ["HorizontalAlignmentRatio".ToLower()] = new("HorizontalAlignmentRatio"),
+            ["Offset".ToLower()] = new("Offset"),
+            ["Size".ToLower()] = new("Size"),
+            ["Stretch".ToLower()] = new("Stretch"),
+            ["VerticalAlignmentRatio".ToLower()] = new("VerticalAlignmentRatio")
         },
         null
     );
     
-    public static readonly SharpObjectProvider VisualSurface = new(
+    private static readonly SharpObjectProvider VisualSurface = new(
         CompositionObject,
         "Microsoft.UI.Composition",
         "CompositionVisualSurface",
         "_compositor.CreateVisualSurface()",
         new()
         {
-            ["sourceoffset"] = new("SourceOffset"),
-            ["sourcesize"] = new("SourceSize"),
-            ["sourcevisual"] = new("SourceVisual")
+            ["SourceOffset".ToLower()] = new("SourceOffset"),
+            ["SourceSize".ToLower()] = new("SourceSize"),
+            ["SourceVisual".ToLower()] = new("SourceVisual")
         },
         null
     );
