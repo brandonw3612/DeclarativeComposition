@@ -1,0 +1,24 @@
+dc {
+    .class = "DCL.Test.ProviderTests.SpotLightTest"
+}
+
+SpotLight {
+    .comment = #"\"SpotLight\"" // Inherited from CompositionObject
+    .isEnabled = #"true" // Inherited from CompositionLight
+    .constantAttenuation = #"1.0f"
+    .coordinateSpace = #"_compositor.CreateSpriteVisual()"
+    .direction = #"new(0.0f, 0.0f, -1.0f)"
+    .innerConeAngle = #"0.0f"
+    .innerConeAngleInDegrees = #"0.0f"
+    .innerConeColor = #"Microsoft.UI.Colors.White"
+    .innerConeIntensity = #"1.0f"
+    .linearAttenuation = #"0.0f"
+    .maxAttenuationCutoff = #"1.0f"
+    .minAttenuationCutoff = #"0.0f"
+    .offset = #"new(0.0f, 0.0f, 0.0f)"
+    .outerConeAngle = #"0.0f"
+    .outerConeAngleInDegrees = #"0.0f"
+    .outerConeColor = #"Microsoft.UI.Colors.White"
+    .outerConeIntensity = #"1.0f"
+    .quadraticAttenuation = #"0.0f"
+}

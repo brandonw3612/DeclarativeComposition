@@ -1,0 +1,12 @@
+dc {
+    .class = "DCL.Test.ProviderTests.DistantLightTest"
+}
+
+DistantLight {
+    .comment = #"\"DistantLight\"" // Inherited from CompositionObject
+    .isEnabled = #"true" // Inherited from CompositionLight
+    .color = #"Microsoft.UI.Colors.White"
+    .coordinateSpace = #"_compositor.CreateSpriteVisual()"
+    .direction = #"new(0f, 0f, 1f)"
+    .intensity = #"1f"
+}

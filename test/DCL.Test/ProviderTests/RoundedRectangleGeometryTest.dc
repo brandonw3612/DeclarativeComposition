@@ -1,0 +1,13 @@
+dc {
+    .class = "DCL.Test.ProviderTests.RoundedRectangleGeometryTest"
+}
+
+RoundedRectangleGeometry {
+    .comment = #"\"RoundedRectangleGeometry\"" // Inherited from CompositionObject
+    .trimEnd = #"0f" // Inherited from CompositionGeometry
+    .trimOffset = #"0f" // Inherited from CompositionGeometry
+    .trimStart = #"0f" // Inherited from CompositionGeometry
+    .cornerRadius = #"new(0f, 0f)"
+    .offset = #"new(0f, 0f)"
+    .size = #"new(0f, 0f)"
+}

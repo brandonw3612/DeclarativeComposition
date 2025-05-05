@@ -1,0 +1,9 @@
+dc {
+    .class = "DCL.Test.ProviderTests.MaskBrushTest"
+}
+
+MaskBrush {
+    .comment = #"\"MaskBrush\"" // Inherited from CompositionObject
+    .mask = #"_compositor.CreateColorBrush()"
+    .source = #"_compositor.CreateColorBrush()"
+}

@@ -1,0 +1,20 @@
+dc {
+    .class = "DCL.Test.ProviderTests.LinearGradientBrushTest"
+}
+
+LinearGradientBrush {
+    .comment = #"\"LinearGradientBrush\"" // Inherited from CompositionObject
+    .anchorPoint = #"new(0f, 0f)" // Inherited from GradientBrush
+    .centerPoint = #"new(0f, 0f)" // Inherited from GradientBrush
+    .colorStops = #"new()" // Inherited from GradientBrush
+    .extendMode = #"Microsoft.UI.Composition.CompositionGradientExtendMode.Clamp" // Inherited from GradientBrush
+    .interpolationSpace = #"Microsoft.UI.Composition.CompositionColorSpace.Auto" // Inherited from GradientBrush
+    .mappingMode = #"Microsoft.UI.Composition.CompositionMappingMode.Absolute" // Inherited from GradientBrush
+    .offset = #"new(0f, 0f)" // Inherited from GradientBrush
+    .rotationAngle = #"0f" // Inherited from GradientBrush
+    .rotationAngleInDegrees = #"0f" // Inherited from GradientBrush
+    .scale = #"new(1f, 1f)" // Inherited from GradientBrush
+    .transformMatrix = #"new(0f, 0f, 0f, 0f, 0f, 0f)" // Inherited from GradientBrush
+    .endPoint = #"new(1f, 1f)"
+    .startPoint = #"new(0f, 0f)"
+}

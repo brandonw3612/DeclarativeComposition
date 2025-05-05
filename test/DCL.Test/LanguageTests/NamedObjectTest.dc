@@ -1,0 +1,15 @@
+dc {
+    .class = "DCL.Test.Generated.LanguageTests.NamedObjectTest"
+}
+
+_rootVisual : SpriteVisual {
+    .brush = backgroundVisual : ColorBrush {
+        .color = #"Microsoft.UI.Colors.Red"
+    }
+}
+
+ForegroundVisual : SpriteVisual {
+    .size = #"new(100f, 100f)"
+    .offset = #"new(0f, 0f, 0f)"
+    .opacity = #"0.5f"
+}

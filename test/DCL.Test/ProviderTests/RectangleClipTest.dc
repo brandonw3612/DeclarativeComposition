@@ -1,0 +1,22 @@
+dc {
+    .class = "DCL.Test.ProviderTests.RectangleClipTest"
+}
+
+RectangleClip {
+    .comment = #"\"RectangleClip\"" // Inherited from CompositionObject
+    .anchorPoint = #"new(0f, 0f)" // Inherited from CompositionClip
+    .centerPoint = #"new(0f, 0f)" // Inherited from CompositionClip
+    .offset = #"new(0f, 0f)" // Inherited from CompositionClip
+    .rotationAngle = #"0f" // Inherited from CompositionClip
+    .rotationAngleInDegrees = #"0f" // Inherited from CompositionClip
+    .scale = #"new(1f, 1f)" // Inherited from CompositionClip
+    .transformMatrix = #"new(1f, 0f, 0f, 1f, 0f, 0f)" // Inherited from CompositionClip
+    .bottom = #"0f"
+    .bottomLeftRadius = #"new(0f, 0f)"
+    .bottomRightRadius = #"new(0f, 0f)"
+    .left = #"0f"
+    .right = #"0f"
+    .top = #"0f"
+    .topLeftRadius = #"new(0f, 0f)"
+    .topRightRadius = #"new(0f, 0f)"
+}

@@ -1,0 +1,7 @@
+dc {
+    .class = "DCL.Test.ProviderTests.BackdropBrushTest"
+}
+
+BackdropBrush {
+    .comment = #"\"BackdropBrush\"" // Inherited from CompositionObject
+}

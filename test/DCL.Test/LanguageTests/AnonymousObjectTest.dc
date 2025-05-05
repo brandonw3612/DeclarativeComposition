@@ -1,0 +1,9 @@
+dc {
+   .class = "DCL.Test.Generated.LanguageTests.AnonymousObjectTest"
+}
+
+SpriteVisual {
+   .brush = ColorBrush {
+       .color = #"Microsoft.UI.Colors.Red"
+   }
+}

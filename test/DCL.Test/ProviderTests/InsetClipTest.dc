@@ -1,0 +1,18 @@
+dc {
+    .class = "DCL.Test.ProviderTests.InsetClipTest"
+}
+
+InsetClip {
+    .comment = #"\"InsetClip\"" // Inherited from CompositionObject
+    .anchorPoint = #"new(0f, 0f)" // Inherited from CompositionClip
+    .centerPoint = #"new(0f, 0f)" // Inherited from CompositionClip
+    .offset = #"new(0f, 0f)" // Inherited from CompositionClip
+    .rotationAngle = #"0f" // Inherited from CompositionClip
+    .rotationAngleInDegrees = #"0f" // Inherited from CompositionClip
+    .scale = #"new(1f, 1f)" // Inherited from CompositionClip
+    .transformMatrix = #"new(1f, 0f, 0f, 1f, 0f, 0f)" // Inherited from CompositionClip
+    .bottomInset = #"0f"
+    .leftInset = #"0f"
+    .rightInset = #"0f"
+    .topInset = #"0f"
+}

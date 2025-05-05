@@ -1,0 +1,13 @@
+dc {
+    .class = "DCL.Test.ProviderTests.DropShadowTest"
+}
+
+DropShadow {
+    .comment = #"\"DropShadow\"" // Inherited from CompositionObject
+    .blurRadius = #"4f"
+    .color = #"Microsoft.UI.Colors.White"
+    .mask = #"_compositor.CreateColorBrush()"
+    .offset = #"new(0f, 0f, 0f)"
+    .opacity = #"1f"
+    .sourcePolicy = #"Microsoft.UI.Composition.CompositionDropShadowSourcePolicy.Default"
+}

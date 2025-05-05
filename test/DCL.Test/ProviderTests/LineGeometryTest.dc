@@ -1,0 +1,12 @@
+dc {
+    .class = "DCL.Test.ProviderTests.LineGeometryTest"
+}
+
+LineGeometry {
+    .comment = #"\"LineGeometry\"" // Inherited from CompositionObject
+    .trimEnd = #"0f" // Inherited from CompositionGeometry
+    .trimOffset = #"0f" // Inherited from CompositionGeometry
+    .trimStart = #"0f" // Inherited from CompositionGeometry
+    .end = #"new(100f, 100f)"
+    .start = #"new(0f, 0f)"
+}

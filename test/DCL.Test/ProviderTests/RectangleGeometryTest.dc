@@ -1,0 +1,12 @@
+dc {
+    .class = "DCL.Test.ProviderTests.RectangleGeometryTest"
+}
+
+RectangleGeometry {
+    .comment = #"\"RectangleGeometry\"" // Inherited from CompositionObject
+    .trimEnd = #"0f" // Inherited from CompositionGeometry
+    .trimOffset = #"0f" // Inherited from CompositionGeometry
+    .trimStart = #"0f" // Inherited from CompositionGeometry
+    .offset = #"new(0f, 0f)"
+    .size = #"new(0f, 0f)"
+}

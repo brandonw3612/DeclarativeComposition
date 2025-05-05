@@ -1,0 +1,11 @@
+dc {
+    .class = "DCL.Test.ProviderTests.PathGeometryTest"
+}
+
+PathGeometry {
+    .comment = #"\"PathGeometry\"" // Inherited from CompositionObject    
+    .trimEnd = #"0f" // Inherited from CompositionGeometry
+    .trimOffset = #"0f" // Inherited from CompositionGeometry
+    .trimStart = #"0f" // Inherited from CompositionGeometry
+    .path = #"new Microsoft.UI.Composition.CompositionPath()"
+}

@@ -1,0 +1,9 @@
+dc {
+    .class = "DCL.Test.ProviderTests.ColorGradientStopTest"
+}
+
+ColorGradientStop {
+    .comment = #"\"ColorGradientStop\"" // Inherited from CompositionObject
+    .color = #"Microsoft.UI.Colors.White"
+    .offset = #"0f"
+}

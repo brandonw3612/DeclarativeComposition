@@ -1,0 +1,25 @@
+dc {
+    .class = "DCL.Test.ProviderTests.SpriteShapeTest"
+}
+
+SpriteShape {
+    .comment = #"\"SpriteShape\"" // Inherited from CompositionObject
+    .centerPoint = #"new(0f, 0f)" // Inherited from CompositionShape
+    .offset = #"new(0f, 0f)" // Inherited from CompositionShape
+    .rotationAngle = #"0f" // Inherited from CompositionShape
+    .rotationAngleInDegrees = #"0f" // Inherited from CompositionShape
+    .scale = #"new(1f, 1f)" // Inherited from CompositionShape
+    .transformMatrix = #"new(1f, 0f, 0f, 1f, 0f, 0f)" // Inherited from CompositionShape
+    .fillBrush = #"_compositor.CreateColorBrush()"
+    .geometry = #"_compositor.CreateRectangleGeometry()"
+    .isStrokeNonScaling = #"true"
+    .strokeBrush = #"_compositor.CreateColorBrush()"
+    .strokeDashArray = #"new()"
+    .strokeDashCap = #"Microsoft.UI.Composition.CompositionStrokeCap.Flat"
+    .strokeDashOffset = #"0f"
+    .strokeEndCap = #"Microsoft.UI.Composition.CompositionStrokeCap.Flat"
+    .strokeLineJoin = #"Microsoft.UI.Composition.CompositionStrokeLineJoin.Miter"
+    .strokeMiterLimit = #"0f"
+    .strokeStartCap = #"Microsoft.UI.Composition.CompositionStrokeCap.Flat"
+    .strokeThickness = #"1f"
+}

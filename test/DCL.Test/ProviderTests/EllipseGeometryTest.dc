@@ -1,0 +1,12 @@
+dc {
+    .class = "DCL.Test.ProviderTests.EllipseGeometryTest"
+}
+
+EllipseGeometry {
+    .comment = #"\"EllipseGeometry\"" // Inherited from CompositionObject
+    .trimEnd = #"0f" // Inherited from CompositionGeometry
+    .trimOffset = #"0f" // Inherited from CompositionGeometry
+    .trimStart = #"0f" // Inherited from CompositionGeometry
+    .center = #"new(50f, 50f)"
+    .radius = #"new(10f, 10f)"
+}

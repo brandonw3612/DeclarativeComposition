@@ -1,0 +1,9 @@
+dc {
+    .class = "DCL.Test.ProviderTests.ProjectedShadowCasterTest"
+}
+
+ProjectedShadowCaster {
+    .comment = #"\"ProjectedShadowCaster\"" // Inherited from CompositionObject
+    .brush = #"_compositor.CreateColorBrush()"
+    .castingVisual = #"_compositor.CreateSpriteVisual()"
+}

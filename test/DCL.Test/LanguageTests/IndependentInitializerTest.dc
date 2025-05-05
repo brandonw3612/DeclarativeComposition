@@ -1,0 +1,10 @@
+dc {
+   .class = "DCL.Test.Generated.LanguageTests.IndependentInitializerTest"
+   .initializer = "independent"
+}
+
+SpriteVisual {
+   .brush = ColorBrush {
+       .color = #"Microsoft.UI.Colors.Red"
+   }
+}

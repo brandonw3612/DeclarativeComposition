@@ -1,0 +1,6 @@
+dc {
+    .class = "DCL.Test.ProviderTests.CompositionShapeTest"
+}
+
+CompositionShape {
+}

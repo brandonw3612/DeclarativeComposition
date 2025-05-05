@@ -1,0 +1,8 @@
+dc {
+    .class = "DCL.Test.ProviderTests.ProjectedShadowReceiverTest"
+}
+
+ProjectedShadowReceiver {
+    .comment = #"\"ProjectedShadowReceiver\"" // Inherited from CompositionObject
+    .receivingVisual = #"_compositor.CreateSpriteVisual()"
+}

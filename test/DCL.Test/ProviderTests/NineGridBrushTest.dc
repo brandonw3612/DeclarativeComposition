@@ -1,0 +1,17 @@
+dc {
+    .class = "DCL.Test.ProviderTests.NineGridBrushTest"
+}
+
+NineGridBrush {
+    .comment = #"\"NineGridBrush\"" // Inherited from CompositionObject
+    .bottomInset = #"0f"
+    .bottomInsetScale = #"1f"
+    .isCenterHollow = #"true"
+    .leftInset = #"0f"
+    .leftInsetScale = #"1f"
+    .rightInset = #"0f"
+    .rightInsetScale = #"1f"
+    .source = #"_compositor.CreateColorBrush()"
+    .topInset = #"0f"
+    .topInsetScale = #"1f"
+}

@@ -1,0 +1,10 @@
+dc {
+    .class = "DCL.Test.ProviderTests.VisualSurfaceTest"
+}
+
+VisualSurface {
+    .comment = #"\"VisualSurface\"" // Inherited from CompositionObject
+    .sourceOffset = #"new(0.0f, 0.0f)"
+    .sourceSize = #"new(0.0f, 0.0f)"
+    .sourceVisual = #"_compositor.CreateSpriteVisual()"
+}

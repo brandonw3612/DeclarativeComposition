@@ -1,0 +1,8 @@
+dc {
+    .class = "DCL.Test.ProviderTests.ColorBrushTest"
+}
+
+ColorBrush {
+    .comment = #"\"ColorBrush\"" // Inherited from CompositionObject
+    .color = #"Microsoft.UI.Colors.Red"
+}
