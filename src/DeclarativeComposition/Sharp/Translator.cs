@@ -1,5 +1,4 @@
 using System.Text;
-using DeclarativeComposition.Utils;
 
 namespace DeclarativeComposition.Sharp;
 
@@ -9,11 +8,14 @@ namespace DeclarativeComposition.Sharp;
 public class Translator
 {
     /// <summary>
+    /// Counter for anonymous objects. Used to generate unique names for anonymous objects.
+    /// </summary>
+    private int _anonymousObjectCounter;
+    
+    /// <summary>
     /// Configuration for the translator.
     /// </summary>
     public TranslatorConfig Config { get; }
-    
-    public AnonymousObjectIndexer AnonymousObjectIndexer { get; } = new();
     
     /// <summary>
     /// Variable declarations for the generated C# class.
@@ -33,6 +35,8 @@ public class Translator
     {
         Config = config;
     }
+
+    public int AnonymousObjectCounter => ++_anonymousObjectCounter;
 
     /// <summary>
     /// Collects everything consumed by the translator and generates C# code.
