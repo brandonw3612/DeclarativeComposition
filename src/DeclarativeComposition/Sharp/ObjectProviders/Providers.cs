@@ -447,7 +447,7 @@ partial class SharpObjectProvider
         ContainerVisual,
         "Microsoft.UI.Composition.Scenes",
         "SceneVisual",
-        "_compositor.CreateSceneVisual()",
+        "Microsoft.UI.Composition.Scenes.SceneVisual.Create(_compositor)",
         new()
         {
             ["Root".ToLower()] = new("Root")
