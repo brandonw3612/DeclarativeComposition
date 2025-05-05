@@ -716,7 +716,7 @@ partial class SharpObjectProvider
         CompositionObject,
         "Microsoft.UI.Composition",
         "CompositionProjectedShadowCaster",
-        null,
+        "_compositor.CreateProjectedShadowCaster()",
         new()
         {
             ["Brush".ToLower()] = new("Brush"),
@@ -732,7 +732,7 @@ partial class SharpObjectProvider
         CompositionObject,
         "Microsoft.UI.Composition",
         "CompositionProjectedShadowReceiver",
-        null,
+        "_compositor.CreateProjectedShadowReceiver()",
         new()
         {
             ["ReceivingVisual".ToLower()] = new("ReceivingVisual"),
