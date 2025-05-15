@@ -1,13 +1,17 @@
+using DeclarativeComposition.Sharp;
+
 namespace DeclarativeComposition.DCL.AST;
 
 /// <summary>
 /// String literal node in the AST.
 /// </summary>
 /// <param name="content">Content of the string literal.</param>
-public class StringLiteralNode(string content) : ExpressionNode
+public class StringLiteralNode(string content) : SingleExpressionNode
 {
     /// <summary>
     /// Content of the string literal.
     /// </summary>
     public string Content { get; } = content;
+
+    public override string Translate(Translator translator) => Content;
 }

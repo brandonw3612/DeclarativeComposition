@@ -4,7 +4,7 @@ namespace DeclarativeComposition.DCL.AST;
 /// Object node in the AST.
 /// </summary>
 /// <param name="type">Type (alias) of the object.</param>
-public class ObjectNode(string type) : ExpressionNode
+public class ObjectNode(string type) : SingleExpressionNode
 {
     /// <summary>
     /// Anonymous ID for the object node when it is not a named object.
@@ -39,7 +39,7 @@ public class ObjectNode(string type) : ExpressionNode
     /// </summary>
     /// <param name="translator">Translator instance for generating C# code.</param>
     /// <returns>Local name of the object in the generated C# code.</returns>
-    public string Translate(Sharp.Translator translator)
+    public override string Translate(Sharp.Translator translator)
     {
         var objectProvider = Sharp.ObjectProviders.SharpObjectProvider.FromTypeAlias(Type);
         if (objectProvider?.ConstructorCall is null)
@@ -70,29 +70,30 @@ public class ObjectNode(string type) : ExpressionNode
             switch (p.Value)
             {
                 case SharpCodeNode raw:
-                    translator.InitializerBody.Add(
-                        pp.SetViaMethod
-                            ? $"{localName}.{pp.Accessor}({raw.Code});"
-                            : $"{localName}.{pp.Accessor} = {raw.Code};"
-                    );
+                    translator.InitializerBody.Add(pp.GenerateSharpCode(localName, raw.Code));
                     break;
                 case ObjectNode obj:
                 {
                     var objectName = obj.Translate(translator);
-                    translator.InitializerBody.Add(
-                        pp.SetViaMethod
-                            ? $"{localName}.{pp.Accessor}({objectName});"
-                            : $"{localName}.{pp.Accessor} = {objectName};"
-                    );
+                    translator.InitializerBody.Add(pp.GenerateSharpCode(localName, objectName));
+                    break;
+                }
+                case CollectionNode col:
+                {
+                    foreach (var item in col.Translate(translator))
+                    {
+                        translator.InitializerBody.Add(pp.GenerateSharpCode(localName, item));
+                    }
                     break;
                 }
             }
         }
-        if (objectProvider.ChildAppendCall is not null)
+        if (objectProvider.DefaultChildrenFieldName is not null)
         {
+            var childField = objectProvider.Properties[objectProvider.DefaultChildrenFieldName];
             foreach (var childName in Children.Select(child => child.Translate(translator)))
             {
-                translator.InitializerBody.Add($"{localName}.{objectProvider.ChildAppendCall}({childName});");
+                translator.InitializerBody.Add(childField.GenerateSharpCode(localName, childName));
             }
         }
         return localName;

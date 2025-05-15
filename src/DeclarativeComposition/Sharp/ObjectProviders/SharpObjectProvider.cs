@@ -1,3 +1,5 @@
+using DeclarativeComposition.Sharp.FieldProviders;
+
 namespace DeclarativeComposition.Sharp.ObjectProviders;
 
 /// <summary>
@@ -5,14 +7,17 @@ namespace DeclarativeComposition.Sharp.ObjectProviders;
 /// </summary>
 public partial class SharpObjectProvider
 {
-    private SharpObjectProvider(SharpObjectProvider? parent, string namespaceName, string className, string? constructorCall, Dictionary<string, SharpPropertyProvider> properties, string? childAppendCall)
+    private SharpObjectProvider(
+        SharpObjectProvider? parent, string namespaceName, string className,
+        string? constructorCall, Dictionary<string, SharpFieldProvider> properties,
+        string? defaultChildrenFieldName)
     {
         Parent = parent;
         NamespaceName = namespaceName;
         ClassName = className;
         ConstructorCall = constructorCall;
         Properties = properties;
-        ChildAppendCall = childAppendCall;
+        DefaultChildrenFieldName = defaultChildrenFieldName;
         if (parent is null) return;
         foreach (var p in parent.Properties)
         {
@@ -43,12 +48,12 @@ public partial class SharpObjectProvider
     /// <summary>
     /// Properties of the object type.
     /// </summary>
-    public Dictionary<string, SharpPropertyProvider> Properties { get; }
+    public Dictionary<string, SharpFieldProvider> Properties { get; }
     
     /// <summary>
     /// Call to append a child to the object.
     /// </summary>
-    public string? ChildAppendCall { get; }
+    public string? DefaultChildrenFieldName { get; }
     
     /// <summary>
     /// Factory method to create an object provider from a type alias.

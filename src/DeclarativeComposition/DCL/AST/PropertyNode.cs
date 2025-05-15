@@ -16,4 +16,6 @@ public class PropertyNode(string name, ExpressionNode value) : AstNode
     /// Value of the property.
     /// </summary>
     public ExpressionNode Value { get; } = value;
+    
+    
 }

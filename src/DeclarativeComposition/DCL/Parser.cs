@@ -57,7 +57,7 @@ public class Parser
             var name = _current.Text;
             Consume(TokenType.Identifier);
             Consume(TokenType.Equal);
-            var expr = ParseExpression();
+            AST.ExpressionNode expr = _current.Type == TokenType.LeftBrace ? ParseCollection() : ParseSingleExpression();
             return new AST.PropertyNode(name, expr);
         }
 
@@ -100,7 +100,22 @@ public class Parser
             return obj;
         }
 
-        private AST.ExpressionNode ParseExpression()
+        private AST.CollectionNode ParseCollection()
+        {
+            Consume(TokenType.LeftBrace);
+            var collection = new AST.CollectionNode();
+
+            while (_current.Type != TokenType.RightBrace)
+            {
+                var expr = ParseSingleExpression();
+                collection.Items.Add(expr);
+            }
+
+            Consume(TokenType.RightBrace);
+            return collection;
+        }
+        
+        private AST.SingleExpressionNode ParseSingleExpression()
         {
             switch (_current.Type)
             {
