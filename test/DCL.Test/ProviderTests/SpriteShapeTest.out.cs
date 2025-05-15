@@ -18,7 +18,7 @@ namespace DCL.Test.ProviderTests {
             obj1.Geometry = _compositor.CreateRectangleGeometry();
             obj1.IsStrokeNonScaling = true;
             obj1.StrokeBrush = _compositor.CreateColorBrush();
-            obj1.StrokeDashArray = new();
+            obj1.StrokeDashArray.Add(1f);
             obj1.StrokeDashCap = Microsoft.UI.Composition.CompositionStrokeCap.Flat;
             obj1.StrokeDashOffset = 0f;
             obj1.StrokeEndCap = Microsoft.UI.Composition.CompositionStrokeCap.Flat;

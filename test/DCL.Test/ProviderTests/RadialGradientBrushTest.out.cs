@@ -10,7 +10,7 @@ namespace DCL.Test.ProviderTests {
             obj1.Comment = "RadialGradientBrush";
             obj1.AnchorPoint = new(0f, 0f);
             obj1.CenterPoint = new(0f, 0f);
-            obj1.ColorStops = new();
+            obj1.ColorStops.Add(_compositor.CreateColorGradientStop());
             obj1.ExtendMode = Microsoft.UI.Composition.CompositionGradientExtendMode.Clamp;
             obj1.InterpolationSpace = Microsoft.UI.Composition.CompositionColorSpace.Auto;
             obj1.MappingMode = Microsoft.UI.Composition.CompositionMappingMode.Absolute;

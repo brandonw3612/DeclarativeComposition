@@ -26,7 +26,10 @@ public class RadialGradientBrushTest() : TestBase("ProviderTests/RadialGradientB
         Assert.Equal("centerPoint", firstChild.Properties[2].Name);
         Assert.Equal("new(0f, 0f)", (firstChild.Properties[2].Value as SharpCodeNode)?.Code);
         Assert.Equal("colorStops", firstChild.Properties[3].Name);
-        Assert.Equal("new()", (firstChild.Properties[3].Value as SharpCodeNode)?.Code);
+        Assert.IsType<CollectionNode>(firstChild.Properties[3].Value);
+        var colorStopsCollection = (firstChild.Properties[3].Value as CollectionNode)!;
+        Assert.Single(colorStopsCollection.Items);
+        Assert.Equal("_compositor.CreateColorGradientStop()", (colorStopsCollection.Items[0] as SharpCodeNode)?.Code);
         Assert.Equal("extendMode", firstChild.Properties[4].Name);
         Assert.Equal("Microsoft.UI.Composition.CompositionGradientExtendMode.Clamp", (firstChild.Properties[4].Value as SharpCodeNode)?.Code);
         Assert.Equal("interpolationSpace", firstChild.Properties[5].Name);

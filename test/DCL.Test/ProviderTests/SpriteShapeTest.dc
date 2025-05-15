@@ -14,7 +14,9 @@ SpriteShape {
     .geometry = #"_compositor.CreateRectangleGeometry()"
     .isStrokeNonScaling = #"true"
     .strokeBrush = #"_compositor.CreateColorBrush()"
-    .strokeDashArray = #"new()"
+    .strokeDashArray = {
+        #"1f"
+    }
     .strokeDashCap = #"Microsoft.UI.Composition.CompositionStrokeCap.Flat"
     .strokeDashOffset = #"0f"
     .strokeEndCap = #"Microsoft.UI.Composition.CompositionStrokeCap.Flat"

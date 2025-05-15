@@ -9,11 +9,11 @@ namespace DCL.Test.ProviderTests {
             var obj1 = _compositor.CreateProjectedShadow();
             obj1.Comment = "ProjectedShadow";
             obj1.BlurRadiusMultiplier = 1f;
-            obj1.Casters = new();
+            obj1.Casters.InsertAtTop(_compositor.CreateProjectedShadowCaster());
             obj1.LightSource = _compositor.CreateAmbientLight();
             obj1.MaxBlurRadius = 20f;
             obj1.MinBlurRadius = 10f;
-            obj1.Receivers = new();
+            obj1.Receivers.Add(_compositor.CreateProjectedShadowReceiver());
         }
     }
 }

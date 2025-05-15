@@ -6,7 +6,9 @@ LinearGradientBrush {
     .comment = #"\"LinearGradientBrush\"" // Inherited from CompositionObject
     .anchorPoint = #"new(0f, 0f)" // Inherited from GradientBrush
     .centerPoint = #"new(0f, 0f)" // Inherited from GradientBrush
-    .colorStops = #"new()" // Inherited from GradientBrush
+    .colorStops = {
+        #"_compositor.CreateColorGradientStop()"
+    } // Inherited from GradientBrush
     .extendMode = #"Microsoft.UI.Composition.CompositionGradientExtendMode.Clamp" // Inherited from GradientBrush
     .interpolationSpace = #"Microsoft.UI.Composition.CompositionColorSpace.Auto" // Inherited from GradientBrush
     .mappingMode = #"Microsoft.UI.Composition.CompositionMappingMode.Absolute" // Inherited from GradientBrush

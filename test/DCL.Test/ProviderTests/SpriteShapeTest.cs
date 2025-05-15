@@ -42,7 +42,10 @@ public class SpriteShapeTest() : TestBase("ProviderTests/SpriteShapeTest")
         Assert.Equal("strokeBrush", firstChild.Properties[10].Name);
         Assert.Equal("_compositor.CreateColorBrush()", (firstChild.Properties[10].Value as SharpCodeNode)?.Code);
         Assert.Equal("strokeDashArray", firstChild.Properties[11].Name);
-        Assert.Equal("new()", (firstChild.Properties[11].Value as SharpCodeNode)?.Code);
+        Assert.IsType<CollectionNode>(firstChild.Properties[11].Value);
+        var collection = (firstChild.Properties[11].Value as CollectionNode)!;
+        Assert.Single(collection.Items);
+        Assert.Equal("1f", (collection.Items[0] as SharpCodeNode)?.Code);
         Assert.Equal("strokeDashCap", firstChild.Properties[12].Name);
         Assert.Equal("Microsoft.UI.Composition.CompositionStrokeCap.Flat", (firstChild.Properties[12].Value as SharpCodeNode)?.Code);
         Assert.Equal("strokeDashOffset", firstChild.Properties[13].Name);
