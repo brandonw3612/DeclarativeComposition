@@ -465,7 +465,7 @@ partial class SharpObjectProvider
     private static readonly SharpObjectProvider ContainerShape = new(
         CompositionShape,
         "Microsoft.UI.Composition",
-        "ContainerShape",
+        "CompositionContainerShape",
         "_compositor.CreateContainerShape()",
         new()
         {
