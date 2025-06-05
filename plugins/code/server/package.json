@@ -1,0 +1,19 @@
+{
+	"name": "dcl-server",
+	"description": "Language server for Declarative Composition Language (DCL) in Visual Studio Code.",
+	"version": "0.1.0",
+	"author": "Brandon Wong",
+	"license": "MIT",
+	"engines": {
+		"node": "*"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/brandonw3612/DeclarativeComposition"
+	},
+	"dependencies": {
+		"vscode-languageserver": "^9.0.1",
+		"vscode-languageserver-textdocument": "^1.0.12"
+	},
+	"scripts": {}
+}

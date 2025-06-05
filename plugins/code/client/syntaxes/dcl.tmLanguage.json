@@ -1,0 +1,82 @@
+{
+	"scopeName": "source.dcl",
+	"name": "Declarative Composition Language",
+	"fileTypes": ["dc", "dcl"],
+	"patterns": [
+	  { "include": "#comments" },
+	  { "include": "#dc-keyword" },
+	  { "include": "#property" },
+	  { "include": "#object-decl" },
+	  { "include": "#sharp-code" },
+	  { "include": "#string" }
+	],
+	"repository": {
+	  "comments": {
+		"patterns": [
+		  {
+			"name": "comment.line.double-slash.dcl",
+			"match": "//.*$"
+		  }
+		]
+	  },
+	  "dc-keyword": {
+		"patterns": [
+		  {
+			"name": "keyword.other.dcl",
+			"match": "\\bdc\\b"
+		  }
+		]
+	  },
+	  "property": {
+		"patterns": [
+		  {
+			"name": "variable.other.property.dcl",
+			"match": "\\.(\\w+)"
+		  }
+		]
+	  },
+	  "object-decl": {
+		"patterns": [
+		  {
+			"name": "meta.object.declaration.dcl",
+			"match": "\\b((\\w+)\\s*:)?\\s*(\\w+)\\b",
+			"captures": {
+				"2": { "name": "entity.name.object.dcl" },
+				"3": { "name": "support.type.dcl" }
+			}
+		  }
+		]
+	  },
+	  "sharp-code": {
+		"patterns": [
+		  {
+			"name": "meta.embedded.block.csharp",
+			"begin": "#\"",
+			"end": "\"",
+			"patterns": [
+			  {
+				"name": "constant.character.escape.dcl",
+				"match": "\\\\."
+			  }
+			]
+		  }
+		]
+	  },
+	  "string": {
+		"patterns": [
+		  {
+			"name": "string.quoted.double.dcl",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+			  {
+				"name": "constant.character.escape.dcl",
+				"match": "\\\\."
+			  }
+			]
+		  }
+		]
+	  }
+	},
+	"uuid": "dcl-001"
+  }

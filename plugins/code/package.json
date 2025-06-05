@@ -1,0 +1,79 @@
+{
+  "name": "declarative-composition-language-support",
+  "displayName": "Declarative Composition Language",
+  "description": "Full support for Declarative Composition Language (DCL) in Visual Studio Code.",
+  "author": "Brandon Wong",
+  "license": "MIT",
+  "version": "0.1.0",
+  "publisher": "brandonw3612",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brandonw3612/DeclarativeComposition"
+  },
+  "keywords": [
+    "Windows",
+    "WinUI",
+    "CompositionUI",
+    "DeclarativeComposition"
+  ],
+  "categories": [
+    "Programming Languages"
+  ],
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "activationEvents": [
+    "onLanguage:dcl"
+  ],
+  "main": "./client/out/extension.js",
+  "contributes": {
+    "languages": [
+      {
+        "id": "dcl",
+        "aliases": [
+          "Declarative Composition Language",
+          "DCL"
+        ],
+        "extensions": [
+          ".dc",
+          ".dcl"
+        ],
+        "configuration": "./client/syntaxes/language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "dcl",
+        "scopeName": "source.dcl",
+        "path": "./client/syntaxes/dcl.tmLanguage.json",
+        "embeddedLanguages": {
+          "meta.embedded.block.csharp": "csharp"
+        }
+      }
+    ],
+    "configuration": {
+      "type": "object",
+      "title": "DCL Language Server Configuration",
+      "properties": {}
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -b",
+    "watch": "tsc -b -w",
+    "lint": "eslint",
+    "postinstall": "cd client && npm install && cd ../server && npm install && cd ..",
+    "test": "sh ./scripts/e2e.sh"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.13.0",
+    "@stylistic/eslint-plugin": "^2.9.0",
+    "@types/mocha": "^10.0.6",
+    "@types/node": "^20",
+    "@types/vscode": "^1.75.0",
+    "eslint": "^9.13.0",
+    "mocha": "^10.3.0",
+    "typescript": "^5.8.2",
+    "typescript-eslint": "^8.33.0"
+  }
+}
