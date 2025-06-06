@@ -2,6 +2,7 @@
   "name": "declarative-composition-language-support",
   "displayName": "Declarative Composition Language",
   "description": "Full support for Declarative Composition Language (DCL) in Visual Studio Code.",
+  "icon": "assets/vsce-icon.png",
   "author": "Brandon Wong",
   "license": "MIT",
   "version": "0.1.0",
