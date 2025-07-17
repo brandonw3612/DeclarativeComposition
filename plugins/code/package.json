@@ -5,7 +5,7 @@
   "icon": "assets/vsce-icon.png",
   "author": "Brandon Wong",
   "license": "MIT",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "publisher": "brandonw3612",
   "repository": {
     "type": "git",

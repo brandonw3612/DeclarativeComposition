@@ -1,5 +1,5 @@
 <h1 align='center'>
-  <image src='assets/vsce-icon.png' width='64' />
+  <image src='https://raw.githubusercontent.com/brandonw3612/DeclarativeComposition/main/assets/vsce-icon.png' width='64' />
   <br/>
   Declarative Composition
   <br/>
