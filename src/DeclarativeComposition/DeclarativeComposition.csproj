@@ -7,11 +7,41 @@
         <Nullable>enable</Nullable>
         <OutputPath>../../build/DeclarativeComposition</OutputPath>
         <EnforceExtendedAnalyzerRules>true</EnforceExtendedAnalyzerRules>
+        <IsRoslynAnalyzer>true</IsRoslynAnalyzer>
+        <IncludeBuildOutput>false</IncludeBuildOutput>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Microsoft.CodeAnalysis.Analyzers" Version="3.11.0" />
-        <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.12.0" />
+        <PackageReference Include="Microsoft.CodeAnalysis.Analyzers" Version="3.11.0" PrivateAssets="all" />
+        <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.12.0" PrivateAssets="all" />
+    </ItemGroup>
+
+    <PropertyGroup>
+        <PackageId>DeclarativeComposition</PackageId>
+        <Title>Declarative Composition</Title>
+        <Version>0.1.3-alpha</Version>
+        <Authors>Brandon Wong</Authors>
+        <Product>DeclarativeComposition</Product>
+        <IncludeSymbols>false</IncludeSymbols>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <PackageIcon>nuget_icon.png</PackageIcon>
+        <PackageReadmeFile>nuget_readme.md</PackageReadmeFile>
+        <Description>
+            Tired of wiring up all the components in your visual tree? Declarative Composition is here to help you simplify the construction of the WinUI visual layer using a clean, declarative syntax.
+        </Description>
+        <Copyright>Copyright (c) Brandon Wong 2025</Copyright>
+        <PackageProjectUrl>https://github.com/brandonw3612/DeclarativeComposition</PackageProjectUrl>
+        <RepositoryType>git</RepositoryType>
+        <RepositoryUrl>https://github.com/brandonw3612/DeclarativeComposition</RepositoryUrl>
+        <PackageTags>windows;winui;composition-ui;declarative-composition</PackageTags>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    </PropertyGroup>
+    
+    <ItemGroup>
+        <None Include="$(OutputPath)/$(AssemblyName).dll" Pack="true" PackagePath="analyzers/dotnet/cs" Visible="false" />
+        <None Include="../../assets/nuget_icon.png" Pack="true" PackagePath="/" />
+        <None Include="../../assets/nuget_readme.md" Pack="true" PackagePath="/" />
     </ItemGroup>
     
 </Project>

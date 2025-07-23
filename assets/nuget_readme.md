@@ -1,18 +1,4 @@
-<h1 align='center'>
-  <image src='assets/vsce-icon.png' width='64' />
-  <br/>
-  Declarative Composition
-  <br/>
-  <a href="https://github.com/brandonw3612/DeclarativeComposition/blob/main/LICENSE">
-    <img alt="GitHub" src="https://img.shields.io/github/license/brandonw3612/DeclarativeComposition?label=License">
-  </a>
-  <a href="https://www.nuget.org/packages/DeclarativeComposition">
-    <img alt="NuGet (with prereleases)" src="https://img.shields.io/nuget/vpre/DeclarativeComposition?logo=nuget&label=NuGet%20Package&labelColor=004880">
-  </a>
-  <a href="https://marketplace.visualstudio.com/items?itemName=brandonw3612.declarative-composition-language-support">
-    <img alt="Visual Studio Marketplace Version" src="https://img.shields.io/visual-studio-marketplace/v/brandonw3612.declarative-composition-language-support?include_prereleases&logo=vscodium&logoColor=ffffff&label=VSCode%20Extension&labelColor=1f9cf0">
-  </a>
-</h1>
+# Declarative Composition
 
 Tired of wiring up all the components in your visual tree? Declarative Composition is here to help you simplify the construction of the WinUI visual layer using a clean, declarative syntax.
 

@@ -744,7 +744,7 @@ partial class SharpObjectProvider
     
     /// <summary>
     /// Provider for <see cref="Microsoft.UI.Composition.CompositionEllipseGeometry" />. <br/>
-    /// he amount to trim the start of the geometry path. <br/>
+    /// The amount to trim the start of the geometry path. <br/>
     /// More on <see href="https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.composition.compositionellipsegeometry">Microsoft Learn</see>.
     /// </summary>
     private static readonly SharpObjectProvider EllipseGeometry = new(
@@ -776,7 +776,7 @@ partial class SharpObjectProvider
         {
             // The end point of the line.
             ["End".ToLower()] = new PropertyFieldProvider("End"),
-            // The startint point of the line.
+            // The starting point of the line.
             ["Start".ToLower()] = new PropertyFieldProvider("Start")
         },
         null
@@ -1054,7 +1054,7 @@ partial class SharpObjectProvider
         {
             // The coordinates of the top-left corner of the part of the visual surface used for rendering.
             ["SourceOffset".ToLower()] = new PropertyFieldProvider("SourceOffset"),
-            // The the height and width of the part of the visual surface used for rendering.
+            // The height and width of the part of the visual surface used for rendering.
             ["SourceSize".ToLower()] = new PropertyFieldProvider("SourceSize"),
             // The root of the visual tree that is the target of the visual surface.
             ["SourceVisual".ToLower()] = new PropertyFieldProvider("SourceVisual")

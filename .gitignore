@@ -8,5 +8,6 @@ riderModule.iml
 /_ReSharper.Caches/
 
 build/
+publish/
 
 *.DotSettings.user

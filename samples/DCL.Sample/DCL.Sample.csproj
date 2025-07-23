@@ -15,12 +15,8 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <PackageReference Include="DeclarativeComposition" Version="0.1.3-alpha" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
         <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.7.250401001" />
-    </ItemGroup>
-    
-    <ItemGroup>
-      <ProjectReference Include="../../src/DeclarativeComposition/DeclarativeComposition.csproj"
-                        OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
     </ItemGroup>
 
     <ItemGroup>
