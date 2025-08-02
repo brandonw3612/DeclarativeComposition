@@ -1,3 +1,4 @@
+using DeclarativeComposition.CodeGen;
 using Microsoft.CodeAnalysis;
 
 namespace DeclarativeComposition;
@@ -17,7 +18,7 @@ public class DclCompiler : IIncrementalGenerator
             DCL.Parser parser = new(lexer);
             var ast = parser.Parse();
             
-            var (fileName, sharpSource) = ast.GenerateSharpCode();
+            var (fileName, sharpSource) = CodeGenerator.GenerateSharpSource(ast);
             c.AddSource(fileName, sharpSource);
         });
     }

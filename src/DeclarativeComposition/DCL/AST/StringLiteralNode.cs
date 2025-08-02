@@ -1,5 +1,3 @@
-using DeclarativeComposition.Sharp;
-
 namespace DeclarativeComposition.DCL.AST;
 
 /// <summary>
@@ -12,6 +10,4 @@ public class StringLiteralNode(string content) : SingleExpressionNode
     /// Content of the string literal.
     /// </summary>
     public string Content { get; } = content;
-
-    public override string Translate(Translator translator) => Content;
 }

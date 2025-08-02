@@ -5,7 +5,4 @@ namespace DeclarativeComposition.DCL.AST;
 /// </summary>
 public abstract class ExpressionNode : AstNode;
 
-public abstract class SingleExpressionNode : ExpressionNode
-{
-    public abstract string Translate(Sharp.Translator translator);
-}
+public abstract class SingleExpressionNode : ExpressionNode;

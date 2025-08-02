@@ -1,5 +1,3 @@
-using DeclarativeComposition.Sharp;
-
 namespace DeclarativeComposition.DCL.AST;
 
 /// <summary>
@@ -12,6 +10,4 @@ public class SharpCodeNode(string code) : SingleExpressionNode
     /// Raw C# code to be injected in a DCL context.
     /// </summary>
     public string Code { get; } = code;
-
-    public override string Translate(Translator translator) => Code;
 }
