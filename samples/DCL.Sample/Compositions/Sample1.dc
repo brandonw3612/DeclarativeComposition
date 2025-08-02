@@ -1,25 +1,28 @@
 dc {
     .class = "Compositions.Sample1"
-    .initializer = "constructor"
+    .initializer = "independent"
 }
 
 RootVisual : SpriteVisual {
-    .size = #"new(800f, 600f)"
-    .offset = #"new(100f, 200f, 0f)"
+    .size = "800 600"
+    .offset = "400 300 0"
     SpriteVisual {
-        .relativeSizeAdjustment = #"new(1f, 1f)"
-        .brush = backgroundBrush : ColorBrush {
-            .color = #"Windows.UI.Color.FromArgb(0x3F, 0xBF, 0xBF, 0xBF)"
-        }
-        anotherVisual : SpriteVisual {
-            .relativeSizeAdjustment = #"new(1f, 1f)"
-            .size = #"new(40f, 40f)"
+        .relativeSizeAdjustment = "1"
+        .brush = _backgroundBrush : ColorBrush {
+            .color = "#3fbfbfbf"
         }
     }
+    _foregroundVisual: SpriteVisual {
+        .relativeSizeAdjustment = "0.9 1"
+        .brush = ColorBrush {
+            .color = "#bf7f7f7f"
+        
+        }
+    }   
     .clip = GeometricClip {
-        .geometry = RectangleGeometry {
-            .size = #"new(600f, 400f)"
-            .offset = #"new(100f, 0f)"
+        .geometry = _clipGeometry : RoundedRectangleGeometry {
+            .cornerRadius = "4"
+            .size = "800,600"
         }
     }
 }
