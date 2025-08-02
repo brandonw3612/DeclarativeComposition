@@ -14,7 +14,7 @@ Tired of wiring up all the components in your visual tree? Declarative Compositi
 Add the following package reference to the `DeclarativeComposition` NuGet package in your WinUI project.
 
 ```xml
-<PackageReference Include="MyCompany.MyCodeGenerator" Version="0.1.3-alpha"
+<PackageReference Include="MyCompany.MyCodeGenerator" Version="0.2.0-alpha"
                   OutputItemType="Analyzer"
                   ReferenceOutputAssembly="false" />
 ```
@@ -64,24 +64,24 @@ It is sometimes exhausting to wire up every component, and naming always gives u
 
 ```
 _rootVisual : SpriteVisual {
-    .size = #"new(800f, 600f)"
-    .offset = #"new(400f, 300f, 0f)"
+    .size = "800, 600"
+    .offset = "400 300 0"
     SpriteVisual {
-        .relativeSizeAdjustment = #"new(1f, 1f)"
+        .relativeSizeAdjustment = "1"
         .brush = _backgroundBrush : ColorBrush {
-            .color = #"Windows.UI.Color.FromArgb(0x3F, 0xBF, 0xBF, 0xBF)"
+            .color = "#3fbfbfbf"
         }
     }
     _foregroundVisual: SpriteVisual {
-        .relativeSizeAdjustment = #"new(0.9f, 1f)"
+        .relativeSizeAdjustment = "0.9 1"
         .brush = ColorBrush {
-            .color = #"Windows.UI.Color.FromArgb(0xBF, 0x7F, 0x7F, 0x7F)"
+            .color = "#BF7F7F7F"
         }
     }   
     .clip = GeometricClip {
         .geometry = _clipGeometry : RoundedRectangleGeometry {
-            .cornerRadius = #"new(4f)"
-            .size = #"new(800f, 600f)"
+            .cornerRadius = "4"
+            .size = "800 600"
         }
     }
 }

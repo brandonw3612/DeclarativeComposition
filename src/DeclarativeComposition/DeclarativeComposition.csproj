@@ -20,7 +20,7 @@
     <PropertyGroup>
         <PackageId>DeclarativeComposition</PackageId>
         <Title>Declarative Composition</Title>
-        <Version>0.1.3-alpha</Version>
+        <Version>0.2.0-alpha</Version>
         <Authors>Brandon Wong</Authors>
         <Product>DeclarativeComposition</Product>
         <IncludeSymbols>false</IncludeSymbols>
