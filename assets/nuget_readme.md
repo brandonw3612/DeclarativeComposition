@@ -14,7 +14,7 @@ Tired of wiring up all the components in your visual tree? Declarative Compositi
 Add the following package reference to the `DeclarativeComposition` NuGet package in your WinUI project.
 
 ```xml
-<PackageReference Include="MyCompany.MyCodeGenerator" Version="0.2.0-alpha"
+<PackageReference Include="MyCompany.MyCodeGenerator" Version="0.2.1-alpha"
                   OutputItemType="Analyzer"
                   ReferenceOutputAssembly="false" />
 ```
