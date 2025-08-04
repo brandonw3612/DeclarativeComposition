@@ -1227,9 +1227,9 @@ public static class Metas
             // The offset from the bottom of the visual. The portion of the visual below the edge defined by Bottom will be clipped. Animatable.
             new("Bottom", [nameof(Single)], new PFI("Bottom")),
             // The amount by which the bottom left corner of the rectangle is rounded.
-            new("BottomLeftRadius", [nameof(Single)], new PFI("BottomLeftRadius")),
+            new("BottomLeftRadius", [nameof(Vector2)], new PFI("BottomLeftRadius")),
             // The amount by which the bottom right corner of the rectangle is rounded.
-            new("BottomRightRadius", [nameof(Single)], new PFI("BottomRightRadius")),
+            new("BottomRightRadius", [nameof(Vector2)], new PFI("BottomRightRadius")),
             // The offset from the left of the visual. The portion of the visual to the left of the edge defined by Left will be clipped. Animatable.
             new("Left", [nameof(Single)], new PFI("Left")),
             // The amount from the right of the visual. The portion of the visual to the right of the edge defined by Right will be clipped. Animatable.
@@ -1237,9 +1237,9 @@ public static class Metas
             // The offset from the top of the visual. The portion of the visual above the edge defined by Top will be clipped. Animatable.
             new("Top", [nameof(Single)], new PFI("Top")),
             // The amount by which the top left corner of the rectangle is rounded.
-            new("TopLeftRadius", [nameof(Single)], new PFI("TopLeftRadius")),
+            new("TopLeftRadius", [nameof(Vector2)], new PFI("TopLeftRadius")),
             // The amount by which the top right corner of the rectangle is rounded.
-            new("TopRightRadius", [nameof(Single)], new PFI("TopRightRadius"))
+            new("TopRightRadius", [nameof(Vector2)], new PFI("TopRightRadius"))
         ]
     );
     
