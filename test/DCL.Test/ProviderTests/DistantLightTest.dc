@@ -3,10 +3,10 @@ dc {
 }
 
 DistantLight {
-    .comment = #"\"DistantLight\"" // Inherited from CompositionObject
-    .isEnabled = #"true" // Inherited from CompositionLight
-    .color = #"Microsoft.UI.Colors.White"
+    .comment = "DistantLight" // Inherited from CompositionObject
+    .isEnabled = "true" // Inherited from CompositionLight
+    .color = "White"
     .coordinateSpace = #"_compositor.CreateSpriteVisual()"
-    .direction = #"new(0f, 0f, 1f)"
-    .intensity = #"1f"
+    .direction = "0,0,1"
+    .intensity = "1"
 }

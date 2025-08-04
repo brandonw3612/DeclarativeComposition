@@ -20,6 +20,6 @@ public class EffectBrushTest() : TestBase("ProviderTests/EffectBrushTest")
         
         // Verify the properties of the first child node
         Assert.Equal("comment", firstChild.Properties[0].Name);
-        Assert.Equal("\"EffectBrush\"", (firstChild.Properties[0].Value as SharpCodeNode)?.Code);
+        Assert.Equal("EffectBrush", (firstChild.Properties[0].Value as StringLiteralNode)?.Content);
     }
 }

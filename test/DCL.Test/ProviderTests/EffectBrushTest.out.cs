@@ -6,8 +6,7 @@ namespace DCL.Test.ProviderTests {
 
         public EffectBrushTest(Microsoft.UI.Composition.Compositor compositor) {
             _compositor = compositor;
-            var obj1 = _compositor.CreateEffectBrush();
-            obj1.Comment = "EffectBrush";
+            // Unable to create an object with type 'EffectBrush': No constructor or factory method found.
         }
     }
 }

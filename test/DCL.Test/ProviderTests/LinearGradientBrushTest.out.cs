@@ -12,19 +12,19 @@ namespace DCL.Test.ProviderTests {
 
             var obj1 = _compositor.CreateLinearGradientBrush();
             obj1.Comment = "LinearGradientBrush";
-            obj1.AnchorPoint = new(0f, 0f);
-            obj1.CenterPoint = new(0f, 0f);
+            obj1.AnchorPoint = new System.Numerics.Vector2(0f, 0f);
+            obj1.CenterPoint = new System.Numerics.Vector2(0f, 0f);
             obj1.ColorStops.Add(_compositor.CreateColorGradientStop());
             obj1.ExtendMode = Microsoft.UI.Composition.CompositionGradientExtendMode.Clamp;
             obj1.InterpolationSpace = Microsoft.UI.Composition.CompositionColorSpace.Auto;
             obj1.MappingMode = Microsoft.UI.Composition.CompositionMappingMode.Absolute;
-            obj1.Offset = new(0f, 0f);
+            obj1.Offset = new System.Numerics.Vector2(0f, 0f);
             obj1.RotationAngle = 0f;
             obj1.RotationAngleInDegrees = 0f;
-            obj1.Scale = new(1f, 1f);
-            obj1.TransformMatrix = new(0f, 0f, 0f, 0f, 0f, 0f);
-            obj1.EndPoint = new(1f, 1f);
-            obj1.StartPoint = new(0f, 0f);
+            obj1.Scale = new System.Numerics.Vector2(1f, 1f);
+            obj1.TransformMatrix = new System.Numerics.Matrix3x2(1f, 0f, 0f, 1f, 0f, 0f);
+            obj1.EndPoint = new System.Numerics.Vector2(1f, 1f);
+            obj1.StartPoint = new System.Numerics.Vector2(0f, 0f);
         }
 
     }

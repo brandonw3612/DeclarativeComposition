@@ -1,6 +1,0 @@
-dc {
-    .class = "DCL.Test.ProviderTests.CompositionGeometryTest"
-}
-
-CompositionGeometry {
-}

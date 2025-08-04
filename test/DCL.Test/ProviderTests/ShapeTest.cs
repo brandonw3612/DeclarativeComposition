@@ -3,7 +3,7 @@ using DeclarativeComposition.DCL.AST;
 
 namespace DCL.Test.ProviderTests;
 
-public class CompositionLightTest() : TestBase("ProviderTests/CompositionLightTest")
+public class ShapeTest() : TestBase("ProviderTests/ShapeTest")
 {
     protected override void VerifyAst(RootNode root)
     {
@@ -13,7 +13,7 @@ public class CompositionLightTest() : TestBase("ProviderTests/CompositionLightTe
 
         // Verify the first child node
         var firstChild = root.Body[0];
-        Assert.Equal("CompositionLight", firstChild.Type);
+        Assert.Equal("Shape", firstChild.Type);
         Assert.Null(firstChild.Name);
         Assert.Empty(firstChild.Children);
         Assert.Empty(firstChild.Properties);

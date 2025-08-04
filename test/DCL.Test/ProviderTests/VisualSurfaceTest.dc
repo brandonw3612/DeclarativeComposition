@@ -3,8 +3,8 @@ dc {
 }
 
 VisualSurface {
-    .comment = #"\"VisualSurface\"" // Inherited from CompositionObject
-    .sourceOffset = #"new(0.0f, 0.0f)"
-    .sourceSize = #"new(0.0f, 0.0f)"
+    .comment = "VisualSurface" // Inherited from CompositionObject
+    .sourceOffset = "0"
+    .sourceSize = "0"
     .sourceVisual = #"_compositor.CreateSpriteVisual()"
 }

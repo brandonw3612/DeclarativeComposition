@@ -3,7 +3,7 @@ dc {
 }
 
 ColorGradientStop {
-    .comment = #"\"ColorGradientStop\"" // Inherited from CompositionObject
-    .color = #"Microsoft.UI.Colors.White"
-    .offset = #"0f"
+    .comment = "ColorGradientStop" // Inherited from CompositionObject
+    .color = "White"
+    .offset = "0"
 }

@@ -20,8 +20,8 @@ public class ColorBrushTest() : TestBase("ProviderTests/ColorBrushTest")
         
         // Verify the properties of the first child node
         Assert.Equal("comment", firstChild.Properties[0].Name);
-        Assert.Equal("\"ColorBrush\"", (firstChild.Properties[0].Value as SharpCodeNode)?.Code);
+        Assert.Equal("ColorBrush", (firstChild.Properties[0].Value as StringLiteralNode)?.Content);
         Assert.Equal("color", firstChild.Properties[1].Name);
-        Assert.Equal("Microsoft.UI.Colors.Red", (firstChild.Properties[1].Value as SharpCodeNode)?.Code);
+        Assert.Equal("Red", (firstChild.Properties[1].Value as StringLiteralNode)?.Content);
     }
 }

@@ -10,7 +10,7 @@ namespace DCL.Test.ProviderTests {
             obj1.Comment = "AmbientLight";
             obj1.IsEnabled = true;
             obj1.Color = Microsoft.UI.Colors.White;
-            obj1.Intensity = 1.0f;
+            obj1.Intensity = 1f;
         }
     }
 }

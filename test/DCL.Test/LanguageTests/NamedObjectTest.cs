@@ -23,7 +23,7 @@ public class NamedObjectTest() : TestBase("LanguageTests/NamedObjectTest")
         Assert.Equal("ColorBrush", namedBrush.Type);
         Assert.Single(namedBrush.Properties);
         Assert.Equal("color", namedBrush.Properties[0].Name);
-        Assert.Equal("Microsoft.UI.Colors.Red", (namedBrush.Properties[0].Value as SharpCodeNode)?.Code);
+        Assert.Equal("Red", (namedBrush.Properties[0].Value as StringLiteralNode)?.Content);
 
         var namedVisual2 = root.Body[1];
         Assert.NotNull(namedVisual2);
@@ -31,10 +31,12 @@ public class NamedObjectTest() : TestBase("LanguageTests/NamedObjectTest")
         Assert.Equal("SpriteVisual", namedVisual2.Type);
         Assert.Equal(3, namedVisual2.Properties.Count);
         Assert.Equal("size", namedVisual2.Properties[0].Name);
-        Assert.Equal("new(100f, 100f)", (namedVisual2.Properties[0].Value as SharpCodeNode)?.Code);
+        Assert.Equal("100 100",
+            (namedVisual2.Properties[0].Value as StringLiteralNode)?.Content);
         Assert.Equal("offset", namedVisual2.Properties[1].Name);
-        Assert.Equal("new(0f, 0f, 0f)", (namedVisual2.Properties[1].Value as SharpCodeNode)?.Code);
+        Assert.Equal("0",
+            (namedVisual2.Properties[1].Value as StringLiteralNode)?.Content);
         Assert.Equal("opacity", namedVisual2.Properties[2].Name);
-        Assert.Equal("0.5f", (namedVisual2.Properties[2].Value as SharpCodeNode)?.Code);
+        Assert.Equal("0.5", (namedVisual2.Properties[2].Value as StringLiteralNode)?.Content);
     }
 }

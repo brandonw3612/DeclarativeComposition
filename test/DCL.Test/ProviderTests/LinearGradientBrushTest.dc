@@ -3,20 +3,20 @@ dc {
 }
 
 LinearGradientBrush {
-    .comment = #"\"LinearGradientBrush\"" // Inherited from CompositionObject
-    .anchorPoint = #"new(0f, 0f)" // Inherited from GradientBrush
-    .centerPoint = #"new(0f, 0f)" // Inherited from GradientBrush
+    .comment = "LinearGradientBrush" // Inherited from CompositionObject
+    .anchorPoint = "0" // Inherited from GradientBrush
+    .centerPoint = "0" // Inherited from GradientBrush
     .colorStops = {
         #"_compositor.CreateColorGradientStop()"
     } // Inherited from GradientBrush
-    .extendMode = #"Microsoft.UI.Composition.CompositionGradientExtendMode.Clamp" // Inherited from GradientBrush
-    .interpolationSpace = #"Microsoft.UI.Composition.CompositionColorSpace.Auto" // Inherited from GradientBrush
-    .mappingMode = #"Microsoft.UI.Composition.CompositionMappingMode.Absolute" // Inherited from GradientBrush
-    .offset = #"new(0f, 0f)" // Inherited from GradientBrush
-    .rotationAngle = #"0f" // Inherited from GradientBrush
-    .rotationAngleInDegrees = #"0f" // Inherited from GradientBrush
-    .scale = #"new(1f, 1f)" // Inherited from GradientBrush
-    .transformMatrix = #"new(0f, 0f, 0f, 0f, 0f, 0f)" // Inherited from GradientBrush
-    .endPoint = #"new(1f, 1f)"
-    .startPoint = #"new(0f, 0f)"
+    .extendMode = "Clamp" // Inherited from GradientBrush
+    .interpolationSpace = "Auto" // Inherited from GradientBrush
+    .mappingMode = "Absolute" // Inherited from GradientBrush
+    .offset = "0" // Inherited from GradientBrush
+    .rotationAngle = "0" // Inherited from GradientBrush
+    .rotationAngleInDegrees = "0" // Inherited from GradientBrush
+    .scale = "1" // Inherited from GradientBrush
+    .transformMatrix = "1,0,0 1,0,0" // Inherited from GradientBrush
+    .endPoint = "1"
+    .startPoint = "0"
 }

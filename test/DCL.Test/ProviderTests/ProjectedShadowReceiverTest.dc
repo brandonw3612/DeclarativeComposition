@@ -3,6 +3,6 @@ dc {
 }
 
 ProjectedShadowReceiver {
-    .comment = #"\"ProjectedShadowReceiver\"" // Inherited from CompositionObject
+    .comment = "ProjectedShadowReceiver" // Inherited from CompositionObject
     .receivingVisual = #"_compositor.CreateSpriteVisual()"
 }

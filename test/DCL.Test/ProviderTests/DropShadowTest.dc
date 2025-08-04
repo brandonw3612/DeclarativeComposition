@@ -3,11 +3,11 @@ dc {
 }
 
 DropShadow {
-    .comment = #"\"DropShadow\"" // Inherited from CompositionObject
-    .blurRadius = #"4f"
-    .color = #"Microsoft.UI.Colors.White"
+    .comment = "DropShadow" // Inherited from CompositionObject
+    .blurRadius = "4"
+    .color = "White"
     .mask = #"_compositor.CreateColorBrush()"
-    .offset = #"new(0f, 0f, 0f)"
-    .opacity = #"1f"
-    .sourcePolicy = #"Microsoft.UI.Composition.CompositionDropShadowSourcePolicy.Default"
+    .offset = "0"
+    .opacity = "1"
+    .sourcePolicy = "Default"
 }

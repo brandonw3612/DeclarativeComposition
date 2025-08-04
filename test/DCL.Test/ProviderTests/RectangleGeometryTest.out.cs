@@ -11,8 +11,8 @@ namespace DCL.Test.ProviderTests {
             obj1.TrimEnd = 0f;
             obj1.TrimOffset = 0f;
             obj1.TrimStart = 0f;
-            obj1.Offset = new(0f, 0f);
-            obj1.Size = new(0f, 0f);
+            obj1.Offset = new System.Numerics.Vector2(0f, 0f);
+            obj1.Size = new System.Numerics.Vector2(0f, 0f);
         }
     }
 }

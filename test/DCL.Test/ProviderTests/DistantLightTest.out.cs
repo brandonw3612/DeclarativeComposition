@@ -11,7 +11,7 @@ namespace DCL.Test.ProviderTests {
             obj1.IsEnabled = true;
             obj1.Color = Microsoft.UI.Colors.White;
             obj1.CoordinateSpace = _compositor.CreateSpriteVisual();
-            obj1.Direction = new(0f, 0f, 1f);
+            obj1.Direction = new System.Numerics.Vector3(0f, 0f, 1f);
             obj1.Intensity = 1f;
         }
     }

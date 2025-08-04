@@ -3,10 +3,10 @@ dc {
 }
 
 LineGeometry {
-    .comment = #"\"LineGeometry\"" // Inherited from CompositionObject
-    .trimEnd = #"0f" // Inherited from CompositionGeometry
-    .trimOffset = #"0f" // Inherited from CompositionGeometry
-    .trimStart = #"0f" // Inherited from CompositionGeometry
-    .end = #"new(100f, 100f)"
-    .start = #"new(0f, 0f)"
+    .comment = "LineGeometry" // Inherited from CompositionObject
+    .trimEnd = "0" // Inherited from CompositionGeometry
+    .trimOffset = "0" // Inherited from CompositionGeometry
+    .trimStart = "0" // Inherited from CompositionGeometry
+    .end = "100"
+    .start = "0"
 }

@@ -20,11 +20,11 @@ public class VisualSurfaceTest() : TestBase("ProviderTests/VisualSurfaceTest")
         
         // Verify the properties of the first child node
         Assert.Equal("comment", firstChild.Properties[0].Name);
-        Assert.Equal("\"VisualSurface\"", (firstChild.Properties[0].Value as SharpCodeNode)?.Code);
+        Assert.Equal("VisualSurface", (firstChild.Properties[0].Value as StringLiteralNode)?.Content);
         Assert.Equal("sourceOffset", firstChild.Properties[1].Name);
-        Assert.Equal("new(0.0f, 0.0f)", (firstChild.Properties[1].Value as SharpCodeNode)?.Code);
+        Assert.Equal("0", (firstChild.Properties[1].Value as StringLiteralNode)?.Content);
         Assert.Equal("sourceSize", firstChild.Properties[2].Name);
-        Assert.Equal("new(0.0f, 0.0f)", (firstChild.Properties[2].Value as SharpCodeNode)?.Code);
+        Assert.Equal("0", (firstChild.Properties[2].Value as StringLiteralNode)?.Content);
         Assert.Equal("sourceVisual", firstChild.Properties[3].Name);
         Assert.Equal("_compositor.CreateSpriteVisual()", (firstChild.Properties[3].Value as SharpCodeNode)?.Code);
     }

@@ -11,7 +11,7 @@ namespace DCL.Test.ProviderTests {
             obj1.BlurRadius = 4f;
             obj1.Color = Microsoft.UI.Colors.White;
             obj1.Mask = _compositor.CreateColorBrush();
-            obj1.Offset = new(0f, 0f, 0f);
+            obj1.Offset = new System.Numerics.Vector3(0f, 0f, 0f);
             obj1.Opacity = 1f;
             obj1.SourcePolicy = Microsoft.UI.Composition.CompositionDropShadowSourcePolicy.Default;
         }

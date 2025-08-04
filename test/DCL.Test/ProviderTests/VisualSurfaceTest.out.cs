@@ -8,8 +8,8 @@ namespace DCL.Test.ProviderTests {
             _compositor = compositor;
             var obj1 = _compositor.CreateVisualSurface();
             obj1.Comment = "VisualSurface";
-            obj1.SourceOffset = new(0.0f, 0.0f);
-            obj1.SourceSize = new(0.0f, 0.0f);
+            obj1.SourceOffset = new System.Numerics.Vector2(0f, 0f);
+            obj1.SourceSize = new System.Numerics.Vector2(0f, 0f);
             obj1.SourceVisual = _compositor.CreateSpriteVisual();
         }
     }

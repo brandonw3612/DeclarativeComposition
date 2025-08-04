@@ -22,6 +22,6 @@ public class AnonymousObjectTest() : Primitives.TestBase("LanguageTests/Anonymou
         Assert.Equal("ColorBrush", anonymousBrush.Type);
         Assert.Single(anonymousBrush.Properties);
         Assert.Equal("color", anonymousBrush.Properties[0].Name);
-        Assert.Equal("Microsoft.UI.Colors.Red", (anonymousBrush.Properties[0].Value as SharpCodeNode)?.Code);
+        Assert.Equal("Red", (anonymousBrush.Properties[0].Value as StringLiteralNode)?.Content);
     }
 }

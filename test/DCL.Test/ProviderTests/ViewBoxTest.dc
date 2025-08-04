@@ -3,10 +3,10 @@ dc {
 }
 
 ViewBox {
-    .comment = #"\"ViewBox\"" // Inherited from CompositionObject
-    .horizontalAlignmentRatio = #"0.5f"
-    .offset = #"new(0.0f, 0.0f)"
-    .size = #"new(0.0f, 0.0f)"
-    .stretch = #"Microsoft.UI.Composition.CompositionStretch.None"
-    .verticalAlignmentRatio = #"0.5f"
+    .comment = "ViewBox" // Inherited from CompositionObject
+    .horizontalAlignmentRatio = "0.5"
+    .offset = "0"
+    .size = "0"
+    .stretch = "None"
+    .verticalAlignmentRatio = "0.5"
 }

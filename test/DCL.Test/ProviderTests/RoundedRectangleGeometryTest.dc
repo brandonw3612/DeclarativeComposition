@@ -3,11 +3,11 @@ dc {
 }
 
 RoundedRectangleGeometry {
-    .comment = #"\"RoundedRectangleGeometry\"" // Inherited from CompositionObject
-    .trimEnd = #"0f" // Inherited from CompositionGeometry
-    .trimOffset = #"0f" // Inherited from CompositionGeometry
-    .trimStart = #"0f" // Inherited from CompositionGeometry
-    .cornerRadius = #"new(0f, 0f)"
-    .offset = #"new(0f, 0f)"
-    .size = #"new(0f, 0f)"
+    .comment = "RoundedRectangleGeometry" // Inherited from CompositionObject
+    .trimEnd = "0" // Inherited from CompositionGeometry
+    .trimOffset = "0" // Inherited from CompositionGeometry
+    .trimStart = "0" // Inherited from CompositionGeometry
+    .cornerRadius = "0"
+    .offset = "0"
+    .size = "0"
 }

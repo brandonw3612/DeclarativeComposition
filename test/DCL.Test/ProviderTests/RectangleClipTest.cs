@@ -20,36 +20,36 @@ public class RectangleClipTest() : TestBase("ProviderTests/RectangleClipTest")
         
         // Verify the properties of the first child node
         Assert.Equal("comment", firstChild.Properties[0].Name);
-        Assert.Equal("\"RectangleClip\"", (firstChild.Properties[0].Value as SharpCodeNode)?.Code);
+        Assert.Equal("RectangleClip", (firstChild.Properties[0].Value as StringLiteralNode)?.Content);
         Assert.Equal("anchorPoint", firstChild.Properties[1].Name);
-        Assert.Equal("new(0f, 0f)", (firstChild.Properties[1].Value as SharpCodeNode)?.Code);
+        Assert.Equal("0", (firstChild.Properties[1].Value as StringLiteralNode)?.Content);
         Assert.Equal("centerPoint", firstChild.Properties[2].Name);
-        Assert.Equal("new(0f, 0f)", (firstChild.Properties[2].Value as SharpCodeNode)?.Code);
+        Assert.Equal("0", (firstChild.Properties[2].Value as StringLiteralNode)?.Content);
         Assert.Equal("offset", firstChild.Properties[3].Name);
-        Assert.Equal("new(0f, 0f)", (firstChild.Properties[3].Value as SharpCodeNode)?.Code);
+        Assert.Equal("0", (firstChild.Properties[3].Value as StringLiteralNode)?.Content);
         Assert.Equal("rotationAngle", firstChild.Properties[4].Name);
-        Assert.Equal("0f", (firstChild.Properties[4].Value as SharpCodeNode)?.Code);
+        Assert.Equal("0", (firstChild.Properties[4].Value as StringLiteralNode)?.Content);
         Assert.Equal("rotationAngleInDegrees", firstChild.Properties[5].Name);
-        Assert.Equal("0f", (firstChild.Properties[5].Value as SharpCodeNode)?.Code);
+        Assert.Equal("0", (firstChild.Properties[5].Value as StringLiteralNode)?.Content);
         Assert.Equal("scale", firstChild.Properties[6].Name);
-        Assert.Equal("new(1f, 1f)", (firstChild.Properties[6].Value as SharpCodeNode)?.Code);
+        Assert.Equal("1", (firstChild.Properties[6].Value as StringLiteralNode)?.Content);
         Assert.Equal("transformMatrix", firstChild.Properties[7].Name);
-        Assert.Equal("new(1f, 0f, 0f, 1f, 0f, 0f)", (firstChild.Properties[7].Value as SharpCodeNode)?.Code);
+        Assert.Equal("1,0,0 1,0,0", (firstChild.Properties[7].Value as StringLiteralNode)?.Content);
         Assert.Equal("bottom", firstChild.Properties[8].Name);
-        Assert.Equal("0f", (firstChild.Properties[8].Value as SharpCodeNode)?.Code);
+        Assert.Equal("0", (firstChild.Properties[8].Value as StringLiteralNode)?.Content);
         Assert.Equal("bottomLeftRadius", firstChild.Properties[9].Name);
-        Assert.Equal("new(0f, 0f)", (firstChild.Properties[9].Value as SharpCodeNode)?.Code);
+        Assert.Equal("0", (firstChild.Properties[9].Value as StringLiteralNode)?.Content);
         Assert.Equal("bottomRightRadius", firstChild.Properties[10].Name);
-        Assert.Equal("new(0f, 0f)", (firstChild.Properties[10].Value as SharpCodeNode)?.Code);
+        Assert.Equal("0", (firstChild.Properties[10].Value as StringLiteralNode)?.Content);
         Assert.Equal("left", firstChild.Properties[11].Name);
-        Assert.Equal("0f", (firstChild.Properties[11].Value as SharpCodeNode)?.Code);
+        Assert.Equal("0", (firstChild.Properties[11].Value as StringLiteralNode)?.Content);
         Assert.Equal("right", firstChild.Properties[12].Name);
-        Assert.Equal("0f", (firstChild.Properties[12].Value as SharpCodeNode)?.Code);
+        Assert.Equal("0", (firstChild.Properties[12].Value as StringLiteralNode)?.Content);
         Assert.Equal("top", firstChild.Properties[13].Name);
-        Assert.Equal("0f", (firstChild.Properties[13].Value as SharpCodeNode)?.Code);
+        Assert.Equal("0", (firstChild.Properties[13].Value as StringLiteralNode)?.Content);
         Assert.Equal("topLeftRadius", firstChild.Properties[14].Name);
-        Assert.Equal("new(0f, 0f)", (firstChild.Properties[14].Value as SharpCodeNode)?.Code);
+        Assert.Equal("0", (firstChild.Properties[14].Value as StringLiteralNode)?.Content);
         Assert.Equal("topRightRadius", firstChild.Properties[15].Name);
-        Assert.Equal("new(0f, 0f)", (firstChild.Properties[15].Value as SharpCodeNode)?.Code);
+        Assert.Equal("0", (firstChild.Properties[15].Value as StringLiteralNode)?.Content);
     }
 }

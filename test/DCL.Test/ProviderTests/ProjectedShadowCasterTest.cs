@@ -20,7 +20,7 @@ public class ProjectedShadowCasterTest() : TestBase("ProviderTests/ProjectedShad
         
         // Verify the properties of the first child node
         Assert.Equal("comment", firstChild.Properties[0].Name);
-        Assert.Equal("\"ProjectedShadowCaster\"", (firstChild.Properties[0].Value as SharpCodeNode)?.Code);
+        Assert.Equal("ProjectedShadowCaster", (firstChild.Properties[0].Value as StringLiteralNode)?.Content);
         Assert.Equal("brush", firstChild.Properties[1].Name);
         Assert.Equal("_compositor.CreateColorBrush()", (firstChild.Properties[1].Value as SharpCodeNode)?.Code);
         Assert.Equal("castingVisual", firstChild.Properties[2].Name);

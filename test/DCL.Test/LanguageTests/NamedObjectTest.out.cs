@@ -14,8 +14,8 @@ namespace DCL.Test.Generated.LanguageTests {
             backgroundVisual.Color = Microsoft.UI.Colors.Red;
             _rootVisual.Brush = backgroundVisual;
             ForegroundVisual = _compositor.CreateSpriteVisual();
-            ForegroundVisual.Size = new(100f, 100f);
-            ForegroundVisual.Offset = new(0f, 0f, 0f);
+            ForegroundVisual.Size = new System.Numerics.Vector2(100f, 100f);
+            ForegroundVisual.Offset = new System.Numerics.Vector3(0f, 0f, 0f);
             ForegroundVisual.Opacity = 0.5f;
         }
     }

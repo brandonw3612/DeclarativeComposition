@@ -3,10 +3,10 @@ dc {
 }
 
 RectangleGeometry {
-    .comment = #"\"RectangleGeometry\"" // Inherited from CompositionObject
-    .trimEnd = #"0f" // Inherited from CompositionGeometry
-    .trimOffset = #"0f" // Inherited from CompositionGeometry
-    .trimStart = #"0f" // Inherited from CompositionGeometry
-    .offset = #"new(0f, 0f)"
-    .size = #"new(0f, 0f)"
+    .comment = "RectangleGeometry" // Inherited from CompositionObject
+    .trimEnd = "0" // Inherited from CompositionGeometry
+    .trimOffset = "0" // Inherited from CompositionGeometry
+    .trimStart = "0" // Inherited from CompositionGeometry
+    .offset = "0"
+    .size = "0"
 }

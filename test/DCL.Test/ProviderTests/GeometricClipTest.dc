@@ -3,14 +3,14 @@ dc {
 }
 
 GeometricClip {
-    .comment = #"\"GeometricClip\"" // Inherited from CompositionObject
-    .anchorPoint = #"new(0f, 0f)" // Inherited from CompositionClip
-    .centerPoint = #"new(0f, 0f)" // Inherited from CompositionClip
-    .offset = #"new(0f, 0f)" // Inherited from CompositionClip
-    .rotationAngle = #"0f" // Inherited from CompositionClip
-    .rotationAngleInDegrees = #"0f" // Inherited from CompositionClip
-    .scale = #"new(1f, 1f)" // Inherited from CompositionClip
-    .transformMatrix = #"new(1f, 0f, 0f, 1f, 0f, 0f)" // Inherited from CompositionClip
+    .comment = "GeometricClip" // Inherited from CompositionObject
+    .anchorPoint = "0" // Inherited from CompositionClip
+    .centerPoint = "0" // Inherited from CompositionClip
+    .offset = "0" // Inherited from CompositionClip
+    .rotationAngle = "0" // Inherited from CompositionClip
+    .rotationAngleInDegrees = "0" // Inherited from CompositionClip
+    .scale = "1" // Inherited from CompositionClip
+    .transformMatrix = "1,0,0 1,0,0" // Inherited from CompositionClip
     .geometry = #"_compositor.CreateRectangleGeometry()"
     .viewBox = #"_compositor.CreateViewBox()"
 }

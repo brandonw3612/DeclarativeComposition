@@ -8,27 +8,27 @@ namespace DCL.Test.ProviderTests {
             _compositor = compositor;
             var obj1 = Microsoft.UI.Composition.Scenes.SceneVisual.Create(_compositor);
             obj1.Comment = "SceneVisual";
-            obj1.AnchorPoint = new(0f, 0f);
+            obj1.AnchorPoint = new System.Numerics.Vector2(0f, 0f);
             obj1.BackfaceVisibility = Microsoft.UI.Composition.CompositionBackfaceVisibility.Inherit;
             obj1.BorderMode = Microsoft.UI.Composition.CompositionBorderMode.Inherit;
-            obj1.CenterPoint = new(0f, 0f, 0f);
+            obj1.CenterPoint = new System.Numerics.Vector3(0f, 0f, 0f);
             obj1.Clip = _compositor.CreateRectangleClip();
             obj1.CompositeMode = Microsoft.UI.Composition.CompositionCompositeMode.Inherit;
             obj1.IsHitTestVisible = false;
             obj1.IsPixelSnappingEnabled = false;
             obj1.IsVisible = true;
-            obj1.Offset = new(0f, 0f, 0f);
+            obj1.Offset = new System.Numerics.Vector3(0f, 0f, 0f);
             obj1.Opacity = 1f;
-            obj1.Orientation = new(0f, 0f, 0f, 0f);
+            obj1.Orientation = new System.Numerics.Quaternion(0f, 0f, 0f, 0f);
             obj1.ParentForTransform = _compositor.CreateSpriteVisual();
-            obj1.RelativeOffsetAdjustment = new(0f, 0f, 0f);
-            obj1.RelativeSizeAdjustment = new(1f, 1f);
+            obj1.RelativeOffsetAdjustment = new System.Numerics.Vector3(0f, 0f, 0f);
+            obj1.RelativeSizeAdjustment = new System.Numerics.Vector2(1f, 1f);
             obj1.RotationAngle = 0f;
             obj1.RotationAngleInDegrees = 0f;
-            obj1.RotationAxis = new(0f, 0f, 1f);
-            obj1.Scale = new(1f, 1f, 1f);
-            obj1.Size = new(1000f, 800f);
-            obj1.TransformMatrix = new(new(1f, 0f, 0f, 1f, 0f, 0f));
+            obj1.RotationAxis = new System.Numerics.Vector3(0f, 0f, 1f);
+            obj1.Scale = new System.Numerics.Vector3(1f, 1f, 1f);
+            obj1.Size = new System.Numerics.Vector2(1000f, 800f);
+            obj1.TransformMatrix = new System.Numerics.Matrix4x4(new System.Numerics.Matrix3x2(1f, 0f, 0f, 1f, 0f, 0f));
             obj1.Root = Microsoft.UI.Composition.Scenes.SceneNode.Create(_compositor);
         }
     }

@@ -8,21 +8,21 @@ namespace DCL.Test.ProviderTests {
             _compositor = compositor;
             var obj1 = _compositor.CreateRectangleClip();
             obj1.Comment = "RectangleClip";
-            obj1.AnchorPoint = new(0f, 0f);
-            obj1.CenterPoint = new(0f, 0f);
-            obj1.Offset = new(0f, 0f);
+            obj1.AnchorPoint = new System.Numerics.Vector2(0f, 0f);
+            obj1.CenterPoint = new System.Numerics.Vector2(0f, 0f);
+            obj1.Offset = new System.Numerics.Vector2(0f, 0f);
             obj1.RotationAngle = 0f;
             obj1.RotationAngleInDegrees = 0f;
-            obj1.Scale = new(1f, 1f);
-            obj1.TransformMatrix = new(1f, 0f, 0f, 1f, 0f, 0f);
+            obj1.Scale = new System.Numerics.Vector2(1f, 1f);
+            obj1.TransformMatrix = new System.Numerics.Matrix3x2(1f, 0f, 0f, 1f, 0f, 0f);
             obj1.Bottom = 0f;
-            obj1.BottomLeftRadius = new(0f, 0f);
-            obj1.BottomRightRadius = new(0f, 0f);
+            obj1.BottomLeftRadius = new System.Numerics.Vector2(0f, 0f);
+            obj1.BottomRightRadius = new System.Numerics.Vector2(0f, 0f);
             obj1.Left = 0f;
             obj1.Right = 0f;
             obj1.Top = 0f;
-            obj1.TopLeftRadius = new(0f, 0f);
-            obj1.TopRightRadius = new(0f, 0f);
+            obj1.TopLeftRadius = new System.Numerics.Vector2(0f, 0f);
+            obj1.TopRightRadius = new System.Numerics.Vector2(0f, 0f);
         }
     }
 }

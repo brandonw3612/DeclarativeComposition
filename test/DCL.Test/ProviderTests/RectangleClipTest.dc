@@ -3,20 +3,20 @@ dc {
 }
 
 RectangleClip {
-    .comment = #"\"RectangleClip\"" // Inherited from CompositionObject
-    .anchorPoint = #"new(0f, 0f)" // Inherited from CompositionClip
-    .centerPoint = #"new(0f, 0f)" // Inherited from CompositionClip
-    .offset = #"new(0f, 0f)" // Inherited from CompositionClip
-    .rotationAngle = #"0f" // Inherited from CompositionClip
-    .rotationAngleInDegrees = #"0f" // Inherited from CompositionClip
-    .scale = #"new(1f, 1f)" // Inherited from CompositionClip
-    .transformMatrix = #"new(1f, 0f, 0f, 1f, 0f, 0f)" // Inherited from CompositionClip
-    .bottom = #"0f"
-    .bottomLeftRadius = #"new(0f, 0f)"
-    .bottomRightRadius = #"new(0f, 0f)"
-    .left = #"0f"
-    .right = #"0f"
-    .top = #"0f"
-    .topLeftRadius = #"new(0f, 0f)"
-    .topRightRadius = #"new(0f, 0f)"
+    .comment = "RectangleClip" // Inherited from CompositionObject
+    .anchorPoint = "0" // Inherited from CompositionClip
+    .centerPoint = "0" // Inherited from CompositionClip
+    .offset = "0" // Inherited from CompositionClip
+    .rotationAngle = "0" // Inherited from CompositionClip
+    .rotationAngleInDegrees = "0" // Inherited from CompositionClip
+    .scale = "1" // Inherited from CompositionClip
+    .transformMatrix = "1,0,0 1,0,0" // Inherited from CompositionClip
+    .bottom = "0"
+    .bottomLeftRadius = "0"
+    .bottomRightRadius = "0"
+    .left = "0"
+    .right = "0"
+    .top = "0"
+    .topLeftRadius = "0"
+    .topRightRadius = "0"
 }

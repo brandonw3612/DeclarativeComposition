@@ -20,32 +20,32 @@ public class SurfaceBrushTest() : TestBase("ProviderTests/SurfaceBrushTest")
         
         // Verify the properties of the first child node
         Assert.Equal("comment", firstChild.Properties[0].Name);
-        Assert.Equal("\"SurfaceBrush\"", (firstChild.Properties[0].Value as SharpCodeNode)?.Code);
+        Assert.Equal("SurfaceBrush", (firstChild.Properties[0].Value as StringLiteralNode)?.Content);
         Assert.Equal("anchorPoint", firstChild.Properties[1].Name);
-        Assert.Equal("new(0f, 0f)", (firstChild.Properties[1].Value as SharpCodeNode)?.Code);
+        Assert.Equal("0", (firstChild.Properties[1].Value as StringLiteralNode)?.Content);
         Assert.Equal("bitmapInterpolationMode", firstChild.Properties[2].Name);
-        Assert.Equal("Microsoft.UI.Composition.CompositionBitmapInterpolationMode.Linear", (firstChild.Properties[2].Value as SharpCodeNode)?.Code);
+        Assert.Equal("Linear", (firstChild.Properties[2].Value as StringLiteralNode)?.Content);
         Assert.Equal("centerPoint", firstChild.Properties[3].Name);
-        Assert.Equal("new(0f, 0f)", (firstChild.Properties[3].Value as SharpCodeNode)?.Code);
+        Assert.Equal("0", (firstChild.Properties[3].Value as StringLiteralNode)?.Content);
         Assert.Equal("horizontalAlignmentRatio", firstChild.Properties[4].Name);
-        Assert.Equal("0.5f", (firstChild.Properties[4].Value as SharpCodeNode)?.Code);
+        Assert.Equal("0.5", (firstChild.Properties[4].Value as StringLiteralNode)?.Content);
         Assert.Equal("offset", firstChild.Properties[5].Name);
-        Assert.Equal("new(0f, 0f)", (firstChild.Properties[5].Value as SharpCodeNode)?.Code);
+        Assert.Equal("0", (firstChild.Properties[5].Value as StringLiteralNode)?.Content);
         Assert.Equal("rotationAngle", firstChild.Properties[6].Name);
-        Assert.Equal("0f", (firstChild.Properties[6].Value as SharpCodeNode)?.Code);
+        Assert.Equal("0", (firstChild.Properties[6].Value as StringLiteralNode)?.Content);
         Assert.Equal("rotationAngleInDegrees", firstChild.Properties[7].Name);
-        Assert.Equal("0f", (firstChild.Properties[7].Value as SharpCodeNode)?.Code);
+        Assert.Equal("0", (firstChild.Properties[7].Value as StringLiteralNode)?.Content);
         Assert.Equal("scale", firstChild.Properties[8].Name);
-        Assert.Equal("new(1f, 1f)", (firstChild.Properties[8].Value as SharpCodeNode)?.Code);
+        Assert.Equal("1", (firstChild.Properties[8].Value as StringLiteralNode)?.Content);
         Assert.Equal("snapToPixels", firstChild.Properties[9].Name);
-        Assert.Equal("false", (firstChild.Properties[9].Value as SharpCodeNode)?.Code);
+        Assert.Equal("false", (firstChild.Properties[9].Value as StringLiteralNode)?.Content);
         Assert.Equal("stretch", firstChild.Properties[10].Name);
-        Assert.Equal("Microsoft.UI.Composition.CompositionStretch.None", (firstChild.Properties[10].Value as SharpCodeNode)?.Code);
+        Assert.Equal("None", (firstChild.Properties[10].Value as StringLiteralNode)?.Content);
         Assert.Equal("surface", firstChild.Properties[11].Name);
         Assert.Equal("_compositor.CreateVisualSurface()", (firstChild.Properties[11].Value as SharpCodeNode)?.Code);
         Assert.Equal("transformMatrix", firstChild.Properties[12].Name);
-        Assert.Equal("new(1f, 0f, 0f, 1f, 0f, 0f)", (firstChild.Properties[12].Value as SharpCodeNode)?.Code);
+        Assert.Equal("1,0,0 1,0,0", (firstChild.Properties[12].Value as StringLiteralNode)?.Content);
         Assert.Equal("verticalAlignmentRatio", firstChild.Properties[13].Name);
-        Assert.Equal("0.5f", (firstChild.Properties[13].Value as SharpCodeNode)?.Code);
+        Assert.Equal("0.5", (firstChild.Properties[13].Value as StringLiteralNode)?.Content);
     }
 }

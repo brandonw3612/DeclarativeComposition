@@ -20,18 +20,18 @@ public class DropShadowTest() : TestBase("ProviderTests/DropShadowTest")
         
         // Verify the properties of the first child node
         Assert.Equal("comment", firstChild.Properties[0].Name);
-        Assert.Equal("\"DropShadow\"", (firstChild.Properties[0].Value as SharpCodeNode)?.Code);
+        Assert.Equal("DropShadow", (firstChild.Properties[0].Value as StringLiteralNode)?.Content);
         Assert.Equal("blurRadius", firstChild.Properties[1].Name);
-        Assert.Equal("4f", (firstChild.Properties[1].Value as SharpCodeNode)?.Code);
+        Assert.Equal("4", (firstChild.Properties[1].Value as StringLiteralNode)?.Content);
         Assert.Equal("color", firstChild.Properties[2].Name);
-        Assert.Equal("Microsoft.UI.Colors.White", (firstChild.Properties[2].Value as SharpCodeNode)?.Code);
+        Assert.Equal("White", (firstChild.Properties[2].Value as StringLiteralNode)?.Content);
         Assert.Equal("mask", firstChild.Properties[3].Name);
         Assert.Equal("_compositor.CreateColorBrush()", (firstChild.Properties[3].Value as SharpCodeNode)?.Code);
         Assert.Equal("offset", firstChild.Properties[4].Name);
-        Assert.Equal("new(0f, 0f, 0f)", (firstChild.Properties[4].Value as SharpCodeNode)?.Code);
+        Assert.Equal("0", (firstChild.Properties[4].Value as StringLiteralNode)?.Content);
         Assert.Equal("opacity", firstChild.Properties[5].Name);
-        Assert.Equal("1f", (firstChild.Properties[5].Value as SharpCodeNode)?.Code);
+        Assert.Equal("1", (firstChild.Properties[5].Value as StringLiteralNode)?.Content);
         Assert.Equal("sourcePolicy", firstChild.Properties[6].Name);
-        Assert.Equal("Microsoft.UI.Composition.CompositionDropShadowSourcePolicy.Default", (firstChild.Properties[6].Value as SharpCodeNode)?.Code);
+        Assert.Equal("Default", (firstChild.Properties[6].Value as StringLiteralNode)?.Content);
     }
 }

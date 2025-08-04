@@ -3,5 +3,5 @@ dc {
 }
 
 BackdropBrush {
-    .comment = #"\"BackdropBrush\"" // Inherited from CompositionObject
+    .comment = "BackdropBrush" // Inherited from CompositionObject
 }

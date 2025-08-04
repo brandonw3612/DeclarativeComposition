@@ -10,7 +10,7 @@ namespace DCL.Test.Generated.LanguageTests {
             _compositor = compositor;
             var obj1 = _compositor.CreateSpriteVisual();
             var obj2 = _compositor.CreateColorBrush();
-            obj2.Color = Microsoft.UI.Colors.Red;
+            obj2.Color = Windows.UI.Color.FromArgb(0xff, 0xff, 0x00, 0x00);
             obj1.Brush = obj2;
         }
     }

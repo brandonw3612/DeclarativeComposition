@@ -3,15 +3,15 @@ dc {
 }
 
 NineGridBrush {
-    .comment = #"\"NineGridBrush\"" // Inherited from CompositionObject
-    .bottomInset = #"0f"
-    .bottomInsetScale = #"1f"
-    .isCenterHollow = #"true"
-    .leftInset = #"0f"
-    .leftInsetScale = #"1f"
-    .rightInset = #"0f"
-    .rightInsetScale = #"1f"
+    .comment = "NineGridBrush" // Inherited from CompositionObject
+    .bottomInset = "0"
+    .bottomInsetScale = "1"
+    .isCenterHollow = "true"
+    .leftInset = "0"
+    .leftInsetScale = "1"
+    .rightInset = "0"
+    .rightInsetScale = "1"
     .source = #"_compositor.CreateColorBrush()"
-    .topInset = #"0f"
-    .topInsetScale = #"1f"
+    .topInset = "0"
+    .topInsetScale = "1"
 }

@@ -8,12 +8,12 @@ namespace DCL.Test.ProviderTests {
             _compositor = compositor;
             var obj1 = _compositor.CreateSpriteShape();
             obj1.Comment = "SpriteShape";
-            obj1.CenterPoint = new(0f, 0f);
-            obj1.Offset = new(0f, 0f);
+            obj1.CenterPoint = new System.Numerics.Vector2(0f, 0f);
+            obj1.Offset = new System.Numerics.Vector2(0f, 0f);
             obj1.RotationAngle = 0f;
             obj1.RotationAngleInDegrees = 0f;
-            obj1.Scale = new(1f, 1f);
-            obj1.TransformMatrix = new(1f, 0f, 0f, 1f, 0f, 0f);
+            obj1.Scale = new System.Numerics.Vector2(1f, 1f);
+            obj1.TransformMatrix = new System.Numerics.Matrix3x2(1f, 0f, 0f, 1f, 0f, 0f);
             obj1.FillBrush = _compositor.CreateColorBrush();
             obj1.Geometry = _compositor.CreateRectangleGeometry();
             obj1.IsStrokeNonScaling = true;

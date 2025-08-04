@@ -3,14 +3,14 @@ dc {
 }
 
 ProjectedShadow {
-    .comment = #"\"ProjectedShadow\"" // Inherited from CompositionObject
-    .blurRadiusMultiplier = #"1f"
+    .comment = "ProjectedShadow" // Inherited from CompositionObject
+    .blurRadiusMultiplier = "1"
     .casters = {
         #"_compositor.CreateProjectedShadowCaster()"
     }
     .lightSource = #"_compositor.CreateAmbientLight()"
-    .maxBlurRadius = #"20f"
-    .minBlurRadius = #"10f"
+    .maxBlurRadius = "20"
+    .minBlurRadius = "10"
     .receivers = {
         #"_compositor.CreateProjectedShadowReceiver()"
     }

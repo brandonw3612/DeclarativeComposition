@@ -12,18 +12,18 @@ namespace DCL.Test.ProviderTests {
 
             var obj1 = _compositor.CreateSurfaceBrush();
             obj1.Comment = "SurfaceBrush";
-            obj1.AnchorPoint = new(0f, 0f);
+            obj1.AnchorPoint = new System.Numerics.Vector2(0f, 0f);
             obj1.BitmapInterpolationMode = Microsoft.UI.Composition.CompositionBitmapInterpolationMode.Linear;
-            obj1.CenterPoint = new(0f, 0f);
+            obj1.CenterPoint = new System.Numerics.Vector2(0f, 0f);
             obj1.HorizontalAlignmentRatio = 0.5f;
-            obj1.Offset = new(0f, 0f);
+            obj1.Offset = new System.Numerics.Vector2(0f, 0f);
             obj1.RotationAngle = 0f;
             obj1.RotationAngleInDegrees = 0f;
-            obj1.Scale = new(1f, 1f);
+            obj1.Scale = new System.Numerics.Vector2(1f, 1f);
             obj1.SnapToPixels = false;
             obj1.Stretch = Microsoft.UI.Composition.CompositionStretch.None;
             obj1.Surface = _compositor.CreateVisualSurface();
-            obj1.TransformMatrix = new(1f, 0f, 0f, 1f, 0f, 0f);
+            obj1.TransformMatrix = new System.Numerics.Matrix3x2(1f, 0f, 0f, 1f, 0f, 0f);
             obj1.VerticalAlignmentRatio = 0.5f;
         }
 

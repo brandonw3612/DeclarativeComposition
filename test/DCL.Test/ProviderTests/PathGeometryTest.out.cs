@@ -11,7 +11,6 @@ namespace DCL.Test.ProviderTests {
             obj1.TrimEnd = 0f;
             obj1.TrimOffset = 0f;
             obj1.TrimStart = 0f;
-            obj1.Path = new Microsoft.UI.Composition.CompositionPath();
         }
     }
 }

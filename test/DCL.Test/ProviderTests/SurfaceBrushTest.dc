@@ -3,18 +3,18 @@ dc {
 }
 
 SurfaceBrush {
-    .comment = #"\"SurfaceBrush\"" // Inherited from CompositionObject
-    .anchorPoint = #"new(0f, 0f)"
-    .bitmapInterpolationMode = #"Microsoft.UI.Composition.CompositionBitmapInterpolationMode.Linear"
-    .centerPoint = #"new(0f, 0f)"
-    .horizontalAlignmentRatio = #"0.5f"
-    .offset = #"new(0f, 0f)"
-    .rotationAngle = #"0f"
-    .rotationAngleInDegrees = #"0f"
-    .scale = #"new(1f, 1f)"
-    .snapToPixels = #"false"
-    .stretch = #"Microsoft.UI.Composition.CompositionStretch.None"
+    .comment = "SurfaceBrush" // Inherited from CompositionObject
+    .anchorPoint = "0"
+    .bitmapInterpolationMode = "Linear"
+    .centerPoint = "0"
+    .horizontalAlignmentRatio = "0.5"
+    .offset = "0"
+    .rotationAngle = "0"
+    .rotationAngleInDegrees = "0"
+    .scale = "1"
+    .snapToPixels = "false"
+    .stretch = "None"
     .surface = #"_compositor.CreateVisualSurface()"
-    .transformMatrix = #"new(1f, 0f, 0f, 1f, 0f, 0f)"
-    .verticalAlignmentRatio = #"0.5f"
+    .transformMatrix = "1,0,0 1,0,0"
+    .verticalAlignmentRatio = "0.5"
 }

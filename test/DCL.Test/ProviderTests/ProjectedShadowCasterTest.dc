@@ -3,7 +3,7 @@ dc {
 }
 
 ProjectedShadowCaster {
-    .comment = #"\"ProjectedShadowCaster\"" // Inherited from CompositionObject
+    .comment = "ProjectedShadowCaster" // Inherited from CompositionObject
     .brush = #"_compositor.CreateColorBrush()"
     .castingVisual = #"_compositor.CreateSpriteVisual()"
 }

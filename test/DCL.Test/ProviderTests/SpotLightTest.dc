@@ -3,22 +3,22 @@ dc {
 }
 
 SpotLight {
-    .comment = #"\"SpotLight\"" // Inherited from CompositionObject
-    .isEnabled = #"true" // Inherited from CompositionLight
-    .constantAttenuation = #"1.0f"
+    .comment = "SpotLight" // Inherited from CompositionObject
+    .isEnabled = "true" // Inherited from CompositionLight
+    .constantAttenuation = "1"
     .coordinateSpace = #"_compositor.CreateSpriteVisual()"
-    .direction = #"new(0.0f, 0.0f, -1.0f)"
-    .innerConeAngle = #"0.0f"
-    .innerConeAngleInDegrees = #"0.0f"
-    .innerConeColor = #"Microsoft.UI.Colors.White"
-    .innerConeIntensity = #"1.0f"
-    .linearAttenuation = #"0.0f"
-    .maxAttenuationCutoff = #"1.0f"
-    .minAttenuationCutoff = #"0.0f"
-    .offset = #"new(0.0f, 0.0f, 0.0f)"
-    .outerConeAngle = #"0.0f"
-    .outerConeAngleInDegrees = #"0.0f"
-    .outerConeColor = #"Microsoft.UI.Colors.White"
-    .outerConeIntensity = #"1.0f"
-    .quadraticAttenuation = #"0.0f"
+    .direction = "0 0 -1"
+    .innerConeAngle = "0"
+    .innerConeAngleInDegrees = "0"
+    .innerConeColor = "White"
+    .innerConeIntensity = "1"
+    .linearAttenuation = "0"
+    .maxAttenuationCutoff = "1"
+    .minAttenuationCutoff = "0"
+    .offset = "0"
+    .outerConeAngle = "0"
+    .outerConeAngleInDegrees = "0"
+    .outerConeColor = "White"
+    .outerConeIntensity = "1"
+    .quadraticAttenuation = "0"
 }

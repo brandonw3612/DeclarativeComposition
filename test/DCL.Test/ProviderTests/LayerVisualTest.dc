@@ -3,28 +3,28 @@ dc {
 }
 
 LayerVisual {
-    .comment = #"\"LayerVisual\"" // Inherited from CompositionObject
-    .anchorPoint = #"new(0f, 0f)" // Inherited from Visual
-    .backfaceVisibility = #"Microsoft.UI.Composition.CompositionBackfaceVisibility.Inherit" // Inherited from Visual
-    .borderMode = #"Microsoft.UI.Composition.CompositionBorderMode.Inherit" // Inherited from Visual
-    .centerPoint = #"new(0f, 0f, 0f)" // Inherited from Visual
+    .comment = "LayerVisual" // Inherited from CompositionObject
+    .anchorPoint = "0" // Inherited from Visual
+    .backfaceVisibility = "Inherit" // Inherited from Visual
+    .borderMode = "Inherit" // Inherited from Visual
+    .centerPoint = "0" // Inherited from Visual
     .clip = #"_compositor.CreateRectangleClip()" // Inherited from Visual
-    .compositeMode = #"Microsoft.UI.Composition.CompositionCompositeMode.Inherit" // Inherited from Visual
-    .isHitTestVisible = #"false" // Inherited from Visual
-    .isPixelSnappingEnabled = #"false" // Inherited from Visual
-    .isVisible = #"true" // Inherited from Visual
-    .offset = #"new(0f, 0f, 0f)" // Inherited from Visual
-    .opacity = #"1f" // Inherited from Visual
-    .orientation = #"new(0f, 0f, 0f, 0f)" // Inherited from Visual
+    .compositeMode = "Inherit" // Inherited from Visual
+    .isHitTestVisible = "false" // Inherited from Visual
+    .isPixelSnappingEnabled = "false" // Inherited from Visual
+    .isVisible = "true" // Inherited from Visual
+    .offset = "0" // Inherited from Visual
+    .opacity = "1" // Inherited from Visual
+    .orientation = "0" // Inherited from Visual
     .parentForTransform = #"_compositor.CreateSpriteVisual()" // Inherited from Visual
-    .relativeOffsetAdjustment = #"new(0f, 0f, 0f)" // Inherited from Visual
-    .relativeSizeAdjustment = #"new(1f, 1f)" // Inherited from Visual
-    .rotationAngle = #"0f" // Inherited from Visual
-    .rotationAngleInDegrees = #"0f" // Inherited from Visual
-    .rotationAxis = #"new(0f, 0f, 1f)" // Inherited from Visual
-    .scale = #"new(1f, 1f, 1f)" // Inherited from Visual
-    .size = #"new(1000f, 800f)" // Inherited from Visual
-    .transformMatrix = #"new(new(1f, 0f, 0f, 1f, 0f, 0f))" // Inherited from Visual
+    .relativeOffsetAdjustment = "0" // Inherited from Visual
+    .relativeSizeAdjustment = "1" // Inherited from Visual
+    .rotationAngle = "0" // Inherited from Visual
+    .rotationAngleInDegrees = "0" // Inherited from Visual
+    .rotationAxis = "0 0 1" // Inherited from Visual
+    .scale = "1" // Inherited from Visual
+    .size = "1000, 800" // Inherited from Visual
+    .transformMatrix = "1,0,0 1,0,0" // Inherited from Visual
     
     SpriteVisual { }
     SpriteVisual { }

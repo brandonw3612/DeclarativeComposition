@@ -20,6 +20,6 @@ public class BackdropBrushTest() : TestBase("ProviderTests/BackdropBrushTest")
         
         // Verify the properties of the first child node
         Assert.Equal("comment", firstChild.Properties[0].Name);
-        Assert.Equal("\"BackdropBrush\"", (firstChild.Properties[0].Value as SharpCodeNode)?.Code);
+        Assert.Equal("BackdropBrush", (firstChild.Properties[0].Value as StringLiteralNode)?.Content);
     }
 }

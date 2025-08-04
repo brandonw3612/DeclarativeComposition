@@ -3,10 +3,10 @@ dc {
 }
 
 EllipseGeometry {
-    .comment = #"\"EllipseGeometry\"" // Inherited from CompositionObject
-    .trimEnd = #"0f" // Inherited from CompositionGeometry
-    .trimOffset = #"0f" // Inherited from CompositionGeometry
-    .trimStart = #"0f" // Inherited from CompositionGeometry
-    .center = #"new(50f, 50f)"
-    .radius = #"new(10f, 10f)"
+    .comment = "EllipseGeometry" // Inherited from CompositionObject
+    .trimEnd = "0" // Inherited from CompositionGeometry
+    .trimOffset = "0" // Inherited from CompositionGeometry
+    .trimStart = "0" // Inherited from CompositionGeometry
+    .center = "50,50"
+    .radius = "10"
 }

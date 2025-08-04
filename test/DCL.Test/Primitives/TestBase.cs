@@ -1,3 +1,4 @@
+using DeclarativeComposition.CodeGen;
 using DeclarativeComposition.DCL;
 using DeclarativeComposition.DCL.AST;
 
@@ -43,7 +44,7 @@ public abstract class TestBase(string sourcePrefix)
         _lexer ??= new Lexer(_dclSource);
         _parser ??= new Parser(_lexer);
         _root ??= _parser.Parse();
-        var (_, sharpCode) = _root.GenerateSharpCode();
+        var (_, sharpCode) = CodeGenerator.GenerateSharpSource(_root);
         Assert.Equal(Utils.RemoveBlanks(_sharpTarget), Utils.RemoveBlanks(sharpCode));
     }
 }

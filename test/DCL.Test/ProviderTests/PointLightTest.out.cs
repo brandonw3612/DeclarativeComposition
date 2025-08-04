@@ -10,14 +10,14 @@ namespace DCL.Test.ProviderTests {
             obj1.Comment = "PointLight";
             obj1.IsEnabled = true;
             obj1.Color = Microsoft.UI.Colors.White;
-            obj1.ConstantAttenuation = 0.0f;
+            obj1.ConstantAttenuation = 0f;
             obj1.CoordinateSpace = _compositor.CreateSpriteVisual();
-            obj1.Intensity = 1.0f;
-            obj1.LinearAttenuation = 0.0f;
-            obj1.MaxAttenuationCutoff = 1.0f;
-            obj1.MinAttenuationCutoff = 0.0f;
-            obj1.Offset = new(0.0f, 0.0f, 0.0f);
-            obj1.QuadraticAttenuation = 0.0f;
+            obj1.Intensity = 1f;
+            obj1.LinearAttenuation = 0f;
+            obj1.MaxAttenuationCutoff = 1f;
+            obj1.MinAttenuationCutoff = 0f;
+            obj1.Offset = new System.Numerics.Vector3(0f, 0f, 0f);
+            obj1.QuadraticAttenuation = 0f;
         }
     }
 }

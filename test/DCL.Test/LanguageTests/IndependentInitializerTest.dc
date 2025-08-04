@@ -5,6 +5,6 @@ dc {
 
 SpriteVisual {
    .brush = ColorBrush {
-       .color = #"Microsoft.UI.Colors.Red"
+       .color = "#f00"
    }
 }

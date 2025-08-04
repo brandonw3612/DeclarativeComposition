@@ -3,13 +3,13 @@ dc {
 }
 
 ContainerShape {
-    .comment = #"\"ContainerShape\"" // Inherited from CompositionObject
-    .centerPoint = #"new(0f, 0f)" // Inherited from CompositionShape
-    .offset = #"new(0f, 0f)" // Inherited from CompositionShape
-    .rotationAngle = #"0f" // Inherited from CompositionShape
-    .rotationAngleInDegrees = #"0f" // Inherited from CompositionShape
-    .scale = #"new(1f, 1f)" // Inherited from CompositionShape
-    .transformMatrix = #"new(1f, 0f, 0f, 1f, 0f, 0f)" // Inherited from CompositionShape
+    .comment = "ContainerShape" // Inherited from CompositionObject
+    .centerPoint = "0" // Inherited from CompositionShape
+    .offset = "0 0" // Inherited from CompositionShape
+    .rotationAngle = "0" // Inherited from CompositionShape
+    .rotationAngleInDegrees = "0" // Inherited from CompositionShape
+    .scale = "1" // Inherited from CompositionShape
+    .transformMatrix = "1,0,0,1,0,0" // Inherited from CompositionShape
     
     SpriteShape {}
     SpriteShape {}

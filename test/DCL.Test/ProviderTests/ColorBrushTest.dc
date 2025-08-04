@@ -3,6 +3,6 @@ dc {
 }
 
 ColorBrush {
-    .comment = #"\"ColorBrush\"" // Inherited from CompositionObject
-    .color = #"Microsoft.UI.Colors.Red"
+    .comment = "ColorBrush" // Inherited from CompositionObject
+    .color = "Red"
 }

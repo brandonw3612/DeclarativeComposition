@@ -20,7 +20,7 @@ public class MaskBrushTest() : TestBase("ProviderTests/MaskBrushTest")
         
         // Verify the properties of the first child node
         Assert.Equal("comment", firstChild.Properties[0].Name);
-        Assert.Equal("\"MaskBrush\"", (firstChild.Properties[0].Value as SharpCodeNode)?.Code);
+        Assert.Equal("MaskBrush", (firstChild.Properties[0].Value as StringLiteralNode)?.Content);
         Assert.Equal("mask", firstChild.Properties[1].Name);
         Assert.Equal("_compositor.CreateColorBrush()", (firstChild.Properties[1].Value as SharpCodeNode)?.Code);
         Assert.Equal("source", firstChild.Properties[2].Name);

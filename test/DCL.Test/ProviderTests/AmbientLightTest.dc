@@ -3,8 +3,8 @@ dc {
 }
 
 AmbientLight {
-    .comment = #"\"AmbientLight\"" // Inherited from CompositionObject
-    .isEnabled = #"true" // Inherited from CompositionLight
-    .color = #"Microsoft.UI.Colors.White"
-    .intensity = #"1.0f"
+    .comment = "AmbientLight" // Inherited from CompositionObject
+    .isEnabled = "true" // Inherited from CompositionLight
+    .color = "White"
+    .intensity = "1"
 }

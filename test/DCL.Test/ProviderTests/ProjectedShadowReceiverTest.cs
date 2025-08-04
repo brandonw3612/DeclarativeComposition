@@ -20,7 +20,7 @@ public class ProjectedShadowReceiverTest() : TestBase("ProviderTests/ProjectedSh
         
         // Verify the properties of the first child node
         Assert.Equal("comment", firstChild.Properties[0].Name);
-        Assert.Equal("\"ProjectedShadowReceiver\"", (firstChild.Properties[0].Value as SharpCodeNode)?.Code);
+        Assert.Equal("ProjectedShadowReceiver", (firstChild.Properties[0].Value as StringLiteralNode)?.Content);
         Assert.Equal("receivingVisual", firstChild.Properties[1].Name);
         Assert.Equal("_compositor.CreateSpriteVisual()", (firstChild.Properties[1].Value as SharpCodeNode)?.Code);
     }

@@ -3,7 +3,7 @@ dc {
 }
 
 MaskBrush {
-    .comment = #"\"MaskBrush\"" // Inherited from CompositionObject
+    .comment = "MaskBrush" // Inherited from CompositionObject
     .mask = #"_compositor.CreateColorBrush()"
     .source = #"_compositor.CreateColorBrush()"
 }

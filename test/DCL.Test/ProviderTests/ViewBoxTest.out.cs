@@ -13,8 +13,8 @@ namespace DCL.Test.ProviderTests {
             var obj1 = _compositor.CreateViewBox();
             obj1.Comment = "ViewBox";
             obj1.HorizontalAlignmentRatio = 0.5f;
-            obj1.Offset = new(0.0f, 0.0f);
-            obj1.Size = new(0.0f, 0.0f);
+            obj1.Offset = new System.Numerics.Vector2(0f, 0f);
+            obj1.Size = new System.Numerics.Vector2(0f, 0f);
             obj1.Stretch = Microsoft.UI.Composition.CompositionStretch.None;
             obj1.VerticalAlignmentRatio = 0.5f;
         }

@@ -3,9 +3,9 @@ dc {
 }
 
 PathGeometry {
-    .comment = #"\"PathGeometry\"" // Inherited from CompositionObject    
-    .trimEnd = #"0f" // Inherited from CompositionGeometry
-    .trimOffset = #"0f" // Inherited from CompositionGeometry
-    .trimStart = #"0f" // Inherited from CompositionGeometry
-    .path = #"new Microsoft.UI.Composition.CompositionPath()"
+    .comment = "PathGeometry" // Inherited from CompositionObject    
+    .trimEnd = "0" // Inherited from CompositionGeometry
+    .trimOffset = "0" // Inherited from CompositionGeometry
+    .trimStart = "0" // Inherited from CompositionGeometry
+    // .path = #"new Microsoft.UI.Composition.CompositionPath()"
 }

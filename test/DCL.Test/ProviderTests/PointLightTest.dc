@@ -3,15 +3,15 @@ dc {
 }
 
 PointLight {
-    .comment = #"\"PointLight\"" // Inherited from CompositionObject
-    .isEnabled = #"true" // Inherited from CompositionLight
-    .color = #"Microsoft.UI.Colors.White"
-    .constantAttenuation = #"0.0f"
+    .comment = "PointLight" // Inherited from CompositionObject
+    .isEnabled = "true" // Inherited from CompositionLight
+    .color = "White"
+    .constantAttenuation = "0.0"
     .coordinateSpace = #"_compositor.CreateSpriteVisual()"
-    .intensity = #"1.0f"
-    .linearAttenuation = #"0.0f"
-    .maxAttenuationCutoff = #"1.0f"
-    .minAttenuationCutoff = #"0.0f"
-    .offset = #"new(0.0f, 0.0f, 0.0f)"
-    .quadraticAttenuation = #"0.0f"
+    .intensity = "1.0"
+    .linearAttenuation = "0.0"
+    .maxAttenuationCutoff = "1.0"
+    .minAttenuationCutoff = "0.0"
+    .offset = "0.0"
+    .quadraticAttenuation = "0.0"
 }
